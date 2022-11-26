@@ -81,7 +81,7 @@ const MyApp: FC<AppProps> = ({ Component, pageProps, router }) => {
                     transition={{ ease: 'easeInOut', duration: 0.3 }}
                   >
                     <DefaultSeo
-                      titleTemplate='%s - Taufik Hidayat'
+                      titleTemplate='%s - Rico Maykel Erawanto'
                       defaultTitle={metaTagsData.title}
                       description={metaTagsData.deskripsi}
                       twitter={{

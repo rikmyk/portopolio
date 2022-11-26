@@ -1,17 +1,17 @@
 export const metaTagsData = {
-  header: 'Taufik Hidayat - Junior Full Stack Developer',
-  title: 'Taufik Hidayat - Junior Full Stack Developer',
+  header: 'Rico Maykel Erawanto - Junior Full Stack Developer',
+  title: 'Rico Maykel Erawanto - Junior Full Stack Developer',
   favicon: '/images/favicon.ico',
   link: 'https://www.tfkhdyt.my.id',
   deskripsi:
-    "Hi everyone, my name is Taufik Hidayat. I'm a Junior Full Stack Developer, Computer Science Student, YouTuber, Free/Libre and Open Source Software Enthusiast, and Google-fu.",
+    "Hi everyone, my name is Rico Maykel Erawanto. I'm a Junior Full Stack Developer, Information Systems Student, Gamers, and Google-fu.",
   thumbnail: '/images/thumbnail-720.png',
   keywords: [
-    'Portofolio web taufik',
-    'Taufik web portfolio',
-    'Portofolio web taufik hidayat',
-    'Taufik hidayat web portfolio',
-    'Portofolio web tfkhdyt',
-    'Tfkhdyt web portfolio',
+    'Portofolio web rico',
+    'Rico web portfolio',
+    'Portofolio web rico maykel',
+    'Rico maykel web portfolio',
+    'Portofolio web rikomykl',
+    'Rikomykl web portfolio',
   ],
 };

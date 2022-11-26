@@ -33,15 +33,15 @@ const WelcomeText: FC<Props> = ({ isDark }) => {
             }}
             color={isDark ? 'white' : 'dark'}
           >
-            Taufik Hidayat
+            Rico Maykel Erawanto
           </Text>
           <TypeAnimation
             sequence={[
               'Junior Full Stack Developer',
               2000,
-              'Linux Geek',
+              'Hungry to learn',
               2000,
-              'FLOSS Enthusiast',
+              'Game Enthusiast',
               2000,
             ]}
             cursor={true}

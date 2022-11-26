@@ -17,39 +17,9 @@ export const skills: Skill[] = [
     icon: 'js.svg',
   },
   {
-    name: 'TypeScript',
-    category: 'Language',
-    icon: 'ts.svg',
-  },
-  {
-    name: 'Go',
-    category: 'Language',
-    icon: 'golang.svg',
-  },
-  {
-    name: 'Python',
-    category: 'Language',
-    icon: 'python.svg',
-  },
-  {
     name: 'PHP',
     category: 'Language',
     icon: 'php.svg',
-  },
-  {
-    name: 'Java',
-    category: 'Language',
-    icon: 'java.svg',
-  },
-  {
-    name: 'C++',
-    category: 'Language',
-    icon: 'cpp.svg',
-  },
-  {
-    name: 'Bash',
-    category: 'Language',
-    icon: 'bash.svg',
   },
   {
     name: 'React',
@@ -67,64 +37,9 @@ export const skills: Skill[] = [
     icon: 'node.png',
   },
   {
-    name: 'Express.js',
-    category: 'Framework/Library',
-    icon: 'express.png',
-  },
-  {
-    name: 'NestJS',
-    category: 'Framework/Library',
-    icon: 'nest.svg',
-  },
-  {
-    name: 'Gin',
-    category: 'Framework/Library',
-    icon: 'gin.png',
-  },
-  {
-    name: 'Telegraf',
-    category: 'Framework/Library',
-    icon: 'telegraf.svg',
-  },
-  {
-    name: 'Zustand',
-    category: 'Framework/Library',
-    icon: 'zustand.png',
-  },
-  {
     name: 'React Hook Form',
     category: 'Framework/Library',
     icon: 'react-hook-form.svg',
-  },
-  {
-    name: 'Jotai',
-    category: 'Framework/Library',
-    icon: 'jotai.png',
-  },
-  {
-    name: 'Prisma',
-    category: 'Framework/Library',
-    icon: 'prisma.png',
-  },
-  {
-    name: 'NextAuth',
-    category: 'Framework/Library',
-    icon: 'nextauth.png',
-  },
-  {
-    name: 'Framer Motion',
-    category: 'Framework/Library',
-    icon: 'framer-motion.png',
-  },
-  {
-    name: 'React Query',
-    category: 'Framework/Library',
-    icon: 'react-query.svg',
-  },
-  {
-    name: 'whatsapp-web.js',
-    category: 'Framework/Library',
-    icon: 'wwebjs.png',
   },
   {
     name: 'Hapi.js',
@@ -140,16 +55,6 @@ export const skills: Skill[] = [
     name: 'Tailwind CSS',
     category: 'UI Framework/Component',
     icon: 'tailwind.svg',
-  },
-  {
-    name: 'daisyUI',
-    category: 'UI Framework/Component',
-    icon: 'daisy.svg',
-  },
-  {
-    name: 'Mantine',
-    category: 'UI Framework/Component',
-    icon: 'mantine.svg',
   },
   {
     name: 'PostgreSQL',
@@ -172,33 +77,8 @@ export const skills: Skill[] = [
     icon: 'sqlite.svg',
   },
   {
-    name: 'Redis',
-    category: 'DBMS',
-    icon: 'redis.svg',
-  },
-  {
-    name: 'RabbitMQ',
-    category: 'Misc',
-    icon: 'rabbitmq.webp',
-  },
-  {
-    name: 'Docker',
-    category: 'Misc',
-    icon: 'docker.svg',
-  },
-  {
-    name: 'GNU/Linux',
-    category: 'Operating System',
-    icon: 'linux.svg',
-  },
-  {
-    name: 'EndeavourOS',
+    name: 'Windows 11',
     category: 'Operating System',
     icon: 'endeavouros.svg',
-  },
-  {
-    name: 'Arch Linux',
-    category: 'Operating System',
-    icon: 'arch.svg',
   },
 ];

@@ -2,58 +2,24 @@ import { Contact } from './contact';
 
 export const contacts: Contact[] = [
   {
-    name: 'Mastodon',
-    label: '@tfkhdyt',
-    link: 'https://fosstodon.org/@tfkhdyt',
-  },
-  {
-    name: 'Matrix',
-    label: '@tfkhdyt',
-    link: 'https://matrix.to/#/@tfkhdyt:matrix.org',
-  },
-  {
     name: 'Email',
-    label: 'tfkhdyt@proton.me',
-    link: 'mailto:tfkhdyt@proton.me',
+    label: 'rkomykl@proton.me',
+    link: 'mailto:rkomykl@proton.me',
   },
   {
     name: 'Telegram',
-    label: '@tfkhdyt',
-    link: 'https://t.me/tfkhdyt',
+    label: '@alrettt',
+    link: 'https://t.me/alrettt',
   },
   {
     name: 'GitHub',
-    label: 'tfkhdyt',
-    link: 'https://github.com/tfkhdyt',
-  },
-  {
-    name: 'Facebook',
-    label: 'Taufik Hidayat',
-    link: 'https://www.facebook.com/tfkhdyt142/',
-  },
-  {
-    name: 'YouTube',
-    label: 'tfkhdyt',
-    link: 'https://youtube.com/tfkhdyt',
-  },
-  // {
-  //   name: 'Twitter',
-  //   label: '@tfkhdyt142',
-  //   link: 'https://twitter.com/tfkhdyt142',
-  // },
-  {
-    name: 'LinkedIn',
-    label: 'Taufik Hidayat',
-    link: 'https://www.linkedin.com/in/tfkhdyt142/',
+    label: 'rikmyk',
+    link: 'https://github.com/r ikmyk',
   },
   {
     name: 'Instagram',
-    label: '@_tfkhdyt_',
-    link: 'https://www.instagram.com/_tfkhdyt_/',
+    label: '@66rimko',
+    link: 'https://www.instagram.com/66rimko/',
   },
-  // {
-  //   name: 'Showwcase',
-  //   label: 'tfkhdyt',
-  //   link: 'https://tfkhdyt.showwcase.com/',
-  // },
+
 ];

@@ -2,15 +2,15 @@ import { IEducation } from './education.d';
 
 export const education: IEducation[] = [
   {
-    name: 'Bale Bandung University',
+    name: 'Universitas Prima Indonesia',
     type: 'University',
-    major: 'Computer Science (Current GPA: 3.62)',
-    timePeriod: '2020 - present',
+    major: 'Information Systems (Current GPA: 4.00)',
+    timePeriod: '2021 - present',
   },
   {
-    name: 'SMKN 7 Baleendah',
+    name: 'SMK Swasta Gajah Mada Medan',
     type: 'Vocational High School',
-    major: 'Software Engineering',
-    timePeriod: '2017 - 2020',
+    major: 'Computer and Network Engineering',
+    timePeriod: '2018 - 2021',
   },
 ];

@@ -1,4 +1,4 @@
-import { Box, List, Text, Timeline } from '@mantine/core';
+  import { Box, List, Text, Timeline } from '@mantine/core';
 
 import { workExperience } from '@/data/About/workExperience';
 

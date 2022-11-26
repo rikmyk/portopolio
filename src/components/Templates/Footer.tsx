@@ -23,7 +23,7 @@ const MyFooter = () => {
   return (
     <Footer height='60' py='sm' sx={{ textAlign: 'center', fontSize: 14 }}>
       <Flex justify='center' gap={5}>
-        <CopyleftAnchor /> &#127279; {currentYear} - Made with ❤️ by tfkhdyt
+        <CopyleftAnchor /> &#127279; {currentYear} - Made with ❤️ by rkmykl
       </Flex>
     </Footer>
   );

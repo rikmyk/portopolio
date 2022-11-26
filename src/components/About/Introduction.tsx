@@ -10,7 +10,7 @@ const Introduction = () => {
       <Grid.Col xs={12} md={3} orderXs={1} orderMd={2}>
         <Center sx={{ paddingTop: '1.5rem' }}>
           <RoundedImage
-            src='/images/tfkhdyt_face.jpg'
+            src='/images/myface.jpg'
             width={150}
             height={150}
           />
@@ -27,7 +27,7 @@ const Introduction = () => {
           weight='bold'
           gradient={{ from: 'indigo', to: 'red', deg: 45 }}
         >
-          Taufik Hidayat
+          Rico Maykel Erawanto
         </Text>
         {introduction.map((each, idx) => (
           <Text size='md' my='sm' key={idx}>
