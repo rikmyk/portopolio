@@ -21,5 +21,15 @@ export const projects: Project[] = [
           },
           tech: ['Html', 'Css', 'Javascript'],
   },
+     {
+          name: 'Bookself API',
+          category: 'API',
+          desc: 'Bookself API useing postman',
+          link: {
+            github: 'https://github.com/rikmyk/bookself-api',
+            demo: '-',
+          },
+          tech: ['Javascript', 'Node.js'],
+  },
      
 ];

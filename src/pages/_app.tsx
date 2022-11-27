@@ -114,7 +114,7 @@ const MyApp: FC<AppProps> = ({ Component, pageProps, router }) => {
                       }}
                     />
                     <Worker workerUrl='/workers/pdf.worker.min.js'>
-                      <a rel="me" href="https://fosstodon.org/@tfkhdyt" style={{ display: 'none' }}>Mastodon</a>
+                      <a rel="me" href="https://fosstodon.org/@rcomykl" style={{ display: 'none' }}>Hamyunz1</a>
                       <Component {...pageProps} />
                     </Worker>
                   </m.div>
