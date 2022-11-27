@@ -37,11 +37,6 @@ export const skills: Skill[] = [
     icon: 'node.png',
   },
   {
-    name: 'React Hook Form',
-    category: 'Framework/Library',
-    icon: 'react-hook-form.svg',
-  },
-  {
     name: 'Hapi.js',
     category: 'Framework/Library',
     icon: 'hapi.png',
@@ -79,6 +74,6 @@ export const skills: Skill[] = [
   {
     name: 'Windows 11',
     category: 'Operating System',
-    icon: 'endeavouros.svg',
+    icon: 'windows.svg',
   },
 ];
