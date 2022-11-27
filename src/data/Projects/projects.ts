@@ -9,7 +9,7 @@ export const projects: Project[] = [
             demo: 'https://kalkulator-web.vercel.app/',
             github: 'https://github.com/rikmyk/kalkulator-web',
           },
-          tech: ['Html', 'Css', 'Javascript'],
+          tech: ['HTML', 'CSS', 'JavaScript'],
      },
      {
           name: 'To Do List',
@@ -19,7 +19,7 @@ export const projects: Project[] = [
             demo: 'https://todo-list-rikmyk.vercel.app/',
             github: 'https://github.com/rikmyk/TodoList',
           },
-          tech: ['Html', 'Css', 'Javascript'],
+          tech: ['HTML', 'CSS', 'JavaScript'],
   },
      {
           name: 'Bookself API',
@@ -29,7 +29,7 @@ export const projects: Project[] = [
             github: 'https://github.com/rikmyk/bookself-api',
             demo: '-',
           },
-          tech: ['Javascript', 'Node.js'],
+          tech: ['JavaScript', 'Node.js'],
   },
      
 ];
