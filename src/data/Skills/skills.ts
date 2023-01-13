@@ -21,16 +21,16 @@ export const skills: Skill[] = [
     category: 'Language',
     icon: 'php.svg',
   },
-  {
-    name: 'React',
-    category: 'Framework/Library',
-    icon: 'react.svg',
-  },
-  {
-    name: 'Next.js',
-    category: 'Framework/Library',
-    icon: 'next.svg',
-  },
+  // {
+  //   name: 'React',
+  //   category: 'Framework/Library',
+  //   icon: 'react.svg',
+  // },
+  // {
+  //   name: 'Next.js',
+  //   category: 'Framework/Library',
+  //   icon: 'next.svg',
+  // },
   {
     name: 'Node.js',
     category: 'Framework/Library',
@@ -51,26 +51,26 @@ export const skills: Skill[] = [
     category: 'UI Framework/Component',
     icon: 'tailwind.svg',
   },
-  {
-    name: 'PostgreSQL',
-    category: 'DBMS',
-    icon: 'postgres.svg',
-  },
-  {
-    name: 'MongoDB',
-    category: 'DBMS',
-    icon: 'mongo.svg',
-  },
+  // {
+  //   name: 'PostgreSQL',
+  //   category: 'DBMS',
+  //   icon: 'postgres.svg',
+  // },
+  // {
+  //   name: 'MongoDB',
+  //   category: 'DBMS',
+  //   icon: 'mongo.svg',
+  // },
   {
     name: 'MySQL',
     category: 'DBMS',
     icon: 'mysql.svg',
   },
-  {
-    name: 'SQLite',
-    category: 'DBMS',
-    icon: 'sqlite.svg',
-  },
+  // {
+  //   name: 'SQLite',
+  //   category: 'DBMS',
+  //   icon: 'sqlite.svg',
+  // },
   {
     name: 'Windows 11',
     category: 'Operating System',
