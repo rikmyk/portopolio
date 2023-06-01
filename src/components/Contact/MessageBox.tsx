@@ -61,55 +61,55 @@ const MessageBox = () => {
     reset();
   };
 
-  return (
-    <>
-      <Box mt='md'>
-        <Text size={42} weight='bold'>
-          Message
-        </Text>
-        <form onSubmit={handleSubmit(onSubmit)}>
-          <Group grow mt='sm' sx={{ display: 'flex', alignItems: 'start' }}>
-            <TextInput
-              placeholder='Your name'
-              label='Full name'
-              size='md'
-              withAsterisk
-              {...register('name')}
-              error={errors.name?.message}
-            />
-            <TextInput
-              placeholder='Your Email'
-              label='Email'
-              size='md'
-              withAsterisk
-              {...register('email')}
-              type='email'
-              error={errors.email?.message}
-            />
-          </Group>
-          <Group grow mt='sm'>
-            <Textarea
-              placeholder='Your message'
-              label='Message'
-              size='md'
-              withAsterisk
-              {...register('message')}
-              error={errors.message?.message}
-            />
-          </Group>
-          <Button
-            mt='md'
-            size='md'
-            leftIcon={<FiSend />}
-            type='submit'
-            color='violet'
-          >
-            Send
-          </Button>
-        </form>
-      </Box>
-    </>
-  );
+  // return (
+  //   <>
+  //     <Box mt='md'>
+  //       <Text size={42} weight='bold'>
+  //         Message
+  //       </Text>
+  //       <form onSubmit={handleSubmit(onSubmit)}>
+  //         <Group grow mt='sm' sx={{ display: 'flex', alignItems: 'start' }}>
+  //           <TextInput
+  //             placeholder='Your name'
+  //             label='Full name'
+  //             size='md'
+  //             withAsterisk
+  //             {...register('name')}
+  //             error={errors.name?.message}
+  //           />
+  //           <TextInput
+  //             placeholder='Your Email'
+  //             label='Email'
+  //             size='md'
+  //             withAsterisk
+  //             {...register('email')}
+  //             type='email'
+  //             error={errors.email?.message}
+  //           />
+  //         </Group>
+  //         <Group grow mt='sm'>
+  //           <Textarea
+  //             placeholder='Your message'
+  //             label='Message'
+  //             size='md'
+  //             withAsterisk
+  //             {...register('message')}
+  //             error={errors.message?.message}
+  //           />
+  //         </Group>
+  //         <Button
+  //           mt='md'
+  //           size='md'
+  //           leftIcon={<FiSend />}
+  //           type='submit'
+  //           color='violet'
+  //         >
+  //           Send
+  //         </Button>
+  //       </form>
+  //     </Box>
+  //   </>
+  // );
 };
 
 export default MessageBox;

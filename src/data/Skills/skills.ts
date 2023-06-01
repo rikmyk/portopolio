@@ -21,6 +21,11 @@ export const skills: Skill[] = [
     category: 'Language',
     icon: 'php.svg',
   },
+  {
+    name: 'Kotlin',
+    category: 'Language',
+    icon: 'kotlin.svg',
+  },
   // {
   //   name: 'React',
   //   category: 'Framework/Library',
@@ -31,16 +36,17 @@ export const skills: Skill[] = [
   //   category: 'Framework/Library',
   //   icon: 'next.svg',
   // },
+  
   {
     name: 'Node.js',
     category: 'Framework/Library',
     icon: 'node.png',
   },
-  {
-    name: 'Hapi.js',
-    category: 'Framework/Library',
-    icon: 'hapi.png',
-  },
+  // {
+  //   name: 'Hapi.js',
+  //   category: 'Framework/Library',
+  //   icon: 'hapi.png',
+  // },
   {
     name: 'Bootstrap',
     category: 'UI Framework/Component',
