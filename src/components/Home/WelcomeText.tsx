@@ -37,7 +37,7 @@ const WelcomeText: FC<Props> = ({ isDark }) => {
           </Text>
           <TypeAnimation
             sequence={[
-              'Junior Full Stack Developer, but for now focus on mobile developers:) ',
+              'Junior Full Stack Developer, for now focus on mobile dev',
               2000,
               'Hungry to learn',
               2000,
