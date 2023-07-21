@@ -2,7 +2,7 @@ import { Text, useMantineColorScheme } from '@mantine/core';
 import { NextSeo } from 'next-seo';
 
 import ContactList from '@/components/Contact/ContactList';
-import MessageBox from '@/components/Contact/MessageBox';
+// import MessageBox from '@/components/Contact/MessageBox';
 
 const Contact = () => {
   const { colorScheme } = useMantineColorScheme();
@@ -16,7 +16,7 @@ const Contact = () => {
           Contact
         </Text>
         <ContactList isDark={isDark} />
-        <MessageBox />
+        {/* <MessageBox /> */}
       </main>
     </>
   );
