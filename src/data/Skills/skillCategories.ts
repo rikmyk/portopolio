@@ -3,6 +3,7 @@ export const skillCategories = [
   'Framework/Library',
   'UI Framework/Component',
   'DBMS',
+  'DevOps & Server',
   'Operating System',
   'Misc',
 ] as const;
