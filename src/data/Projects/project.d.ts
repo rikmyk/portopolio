@@ -1,5 +1,5 @@
+import { skills } from '../Skills/skills';
 import { projectCategories } from './projectCategories';
-import { skills } from './Skills/skills';
 
 export interface Project {
   name: string;
@@ -10,4 +10,5 @@ export interface Project {
     demo: string | null;
     github: string | null;
   };
+  preview?: string[]; // array of image paths for private projects
 }

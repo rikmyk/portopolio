@@ -1,5 +1,5 @@
 import { Box, Grid, Stack, Text } from '@mantine/core';
-import React, { FC } from 'react';
+import React, { FC, useEffect, useState } from 'react';
 import { TypeAnimation } from 'react-type-animation';
 
 import { useStyles } from '@/hooks/useStyles';
@@ -10,6 +10,9 @@ interface Props {
 
 const WelcomeText: FC<Props> = ({ isDark }) => {
   const { classes } = useStyles();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => { setMounted(true); }, []);
 
   return (
     <Grid.Col sm={6} orderSm={1}>
@@ -35,20 +38,25 @@ const WelcomeText: FC<Props> = ({ isDark }) => {
           >
             Rico Maykel Erawanto
           </Text>
-          <TypeAnimation
-            sequence={[
-              'Junior Full Stack Developer, for now focus on mobile dev',
-              2000,
-              'Hungry to learn',
-              2000,
-              'Game Enthusiast',
-              2000,
-            ]}
-            cursor={true}
-            repeat={Infinity}
-            className={classes.gradientText}
-          />
-          {/* </Text> */}
+          {mounted ? (
+            <TypeAnimation
+              sequence={[
+                'Junior Full Stack Developer and Freelancer',
+                2000,
+                'Hungry to learn',
+                2000,
+                'Game Enthusiast',
+                2000,
+              ]}
+              cursor={true}
+              repeat={Infinity}
+              className={classes.gradientText}
+            />
+          ) : (
+            <Text component='span' className={classes.gradientText}>
+              Junior Full Stack Developer and Freelancer
+            </Text>
+          )}
         </Box>
         <Text
           size='md'

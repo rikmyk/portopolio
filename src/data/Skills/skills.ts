@@ -57,7 +57,7 @@ export const skills: Skill[] = [
   {
     name: 'PostgreSQL',
     category: 'DBMS',
-    icon: 'postgresql.svg',
+    icon: 'postgres.svg',
   },
   {
     name: 'PM2',

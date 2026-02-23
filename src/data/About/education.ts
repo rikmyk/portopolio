@@ -4,8 +4,8 @@ export const education: IEducation[] = [
   {
     name: 'Universitas Prima Indonesia',
     type: 'University',
-    major: 'Information Systems (Current GPA: 4.00)',
-    timePeriod: '2021 - present',
+    major: 'Information Systems (GPA: 3.86)',
+    timePeriod: '2021 - 2025',
   },
   {
     name: 'SMK Swasta Gajah Mada Medan',

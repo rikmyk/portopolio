@@ -3,8 +3,8 @@ import { Contact } from './contact';
 export const contacts: Contact[] = [
   {
     name: 'Email',
-    label: 'rkomykl@proton.me',
-    link: 'mailto:rkomykl@proton.me',
+    label: 'rikomaikel01@gmail.com',
+    link: 'mailto:rikomaikel01@gmail.com',
   },
   {
     name: 'Telegram',

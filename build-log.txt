@@ -1,0 +1,109 @@
+﻿
+> web-portfolio-v3@0.1.0 build
+> next build
+
+node.exe : 
+(node:40860) 
+[DEP0040] 
+DeprecationWarning: 
+The `punycode` 
+module is 
+deprecated. Please 
+use a userland 
+alternative instead.
+At C:\Users\RICO\App
+Data\Roaming\npm\npm
+.ps1:24 char:5
++     & "node$exe"  
+"$basedir/node_modul
+es/npm/bin/npm-cli.j
+s" $args
++     ~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~
+    + CategoryInfo  
+            : NotS  
+  pecified: ((nod   
+ e:40860) [D...n    
+ative instead.:    
+String) [], Rem    
+oteException
+    + FullyQualifie 
+   dErrorId : Nati  
+  veCommandError
+ 
+(Use `node 
+--trace-deprecation 
+...` to show where 
+the warning was 
+created)
+info  - Loaded env from D:\laragon\www\web-portfolio-v3\.env
+info  - Linting and checking validity of types...
+
+Failed to compile.
+
+./src/components/Pro
+jects/ProjectCard.ts
+x
+63:14  Warning: 
+Forbidden non-null 
+assertion.  @typescr
+ipt-eslint/no-non-nu
+ll-assertion
+103:22  Warning: 
+Forbidden non-null 
+assertion.  @typescr
+ipt-eslint/no-non-nu
+ll-assertion
+120:14  Warning: 
+Forbidden non-null 
+assertion.  @typescr
+ipt-eslint/no-non-nu
+ll-assertion
+122:74  Warning: 
+Forbidden non-null 
+assertion.  @typescr
+ipt-eslint/no-non-nu
+ll-assertion
+123:41  Warning: 
+Forbidden non-null 
+assertion.  @typescr
+ipt-eslint/no-non-nu
+ll-assertion
+134:42  Warning: 
+Forbidden non-null 
+assertion.  @typescr
+ipt-eslint/no-non-nu
+ll-assertion
+148:12  Warning: 
+Forbidden non-null 
+assertion.  @typescr
+ipt-eslint/no-non-nu
+ll-assertion
+150:16  Warning: 
+Forbidden non-null 
+assertion.  @typescr
+ipt-eslint/no-non-nu
+ll-assertion
+187:32  Warning: 
+Forbidden non-null 
+assertion.  @typescr
+ipt-eslint/no-non-nu
+ll-assertion
+
+./src/data/Projects/
+project.d.ts
+1:1  Error: Run 
+autofix to sort 
+these imports!  simp
+le-import-sort/impor
+ts
+
+info  - Need to 
+disable some ESLint 
+rules? Learn more 
+here: https://nextjs
+.org/docs/basic-feat
+ures/eslint#disablin
+g-rules
