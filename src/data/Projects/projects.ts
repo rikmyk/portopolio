@@ -37,7 +37,7 @@ export const projects: Project[] = [
     desc: 'A Flutter mobile application featuring live news feeds from News.org API and real-time weather data via OpenWeatherMap Geolocation API. Built with GetX state management for efficient and reactive UI updates, delivering a seamless experience across Android and iOS devices.',
     link: {
       demo: null,
-      github: null,
+      github: 'https://github.com/rikmyk/portopolio',
     },
     tech: ['Dart', 'Flutter'],
     preview: [
