@@ -32,6 +32,22 @@ export const projects: Project[] = [
           tech: ['JavaScript', 'Node.js'],
   },
   {
+    name: 'News App With Weather and Geolocation API',
+    category: 'Application',
+    desc: 'A Flutter mobile application featuring live news feeds from News.org API and real-time weather data via OpenWeatherMap Geolocation API. Built with GetX state management for efficient and reactive UI updates, delivering a seamless experience across Android and iOS devices.',
+    link: {
+      demo: null,
+      github: null,
+    },
+    tech: ['Dart', 'Flutter'],
+    preview: [
+      '/images/projects/news-weather-app/prev1.png',
+      '/images/projects/news-weather-app/prev2.png',
+      '/images/projects/news-weather-app/prev3.png',
+      '/images/projects/news-weather-app/prev4.png',
+    ],
+  },
+  {
     name: 'Custom Discord Transaction Bot',
     category: 'Bot',
     desc: 'Developed a custom Discord bot to facilitate secure and structured transactions for buying and selling Roblox items and Robux. Implemented advanced features including automated transaction transcripts, chat history logging for audit purposes, and dynamic Robux-to-currency price conversion. Designed the system to improve transaction transparency, minimize disputes, and enhance operational efficiency within the community marketplace.',

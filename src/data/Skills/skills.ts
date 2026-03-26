@@ -31,7 +31,17 @@ export const skills: Skill[] = [
     category: 'Language',
     icon: 'kotlin.svg',
   },
+  {
+    name: 'Dart',
+    category: 'Language',
+    icon: 'dart.svg',
+  },
 
+  {
+    name: 'Flutter',
+    category: 'Framework/Library',
+    icon: 'flutter.svg',
+  },
   
   {
     name: 'Node.js',
