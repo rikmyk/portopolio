@@ -5,5 +5,6 @@ export const skillCategories = [
   'DBMS',
   'DevOps & Server',
   'Operating System',
+  'Engineering & Workflow',
   'Misc',
 ] as const;
