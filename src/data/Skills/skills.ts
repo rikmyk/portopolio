@@ -36,6 +36,11 @@ export const skills: Skill[] = [
     category: 'Language',
     icon: 'dart.svg',
   },
+  {
+    name: 'Go',
+    category: 'Language',
+    icon: 'golang.svg',
+  },
 
   {
     name: 'Flutter',
@@ -47,6 +52,41 @@ export const skills: Skill[] = [
     name: 'Node.js',
     category: 'Framework/Library',
     icon: 'node.png',
+  },
+  {
+    name: 'React.js',
+    category: 'Framework/Library',
+    icon: 'react.svg',
+  },
+  {
+    name: 'Next.js',
+    category: 'Framework/Library',
+    icon: 'next.svg',
+  },
+  {
+    name: 'Vue.js',
+    category: 'Framework/Library',
+    icon: 'vue.svg',
+  },
+  {
+    name: 'Express.js',
+    category: 'Framework/Library',
+    icon: 'express.svg',
+  },
+  {
+    name: 'NestJS',
+    category: 'Framework/Library',
+    icon: 'nest.svg',
+  },
+  {
+    name: 'Laravel',
+    category: 'Framework/Library',
+    icon: 'laravel.svg',
+  },
+  {
+    name: 'Gin',
+    category: 'Framework/Library',
+    icon: 'gin.png',
   },
 
   {
@@ -83,6 +123,46 @@ export const skills: Skill[] = [
     name: 'Linux',
     category: 'DevOps & Server',
     icon: 'linux.svg',
+  },
+  {
+    name: 'Docker',
+    category: 'DevOps & Server',
+    icon: 'docker.svg',
+  },
+  {
+    name: 'Vercel',
+    category: 'DevOps & Server',
+    icon: 'vercel.svg',
+  },
+  {
+    name: 'SDLC',
+    category: 'Engineering & Workflow',
+    icon: 'sdlc.svg',
+  },
+  {
+    name: 'Clean Code',
+    category: 'Engineering & Workflow',
+    icon: 'clean-code.svg',
+  },
+  {
+    name: 'Agile/Scrum',
+    category: 'Engineering & Workflow',
+    icon: 'agile.svg',
+  },
+  {
+    name: 'Database Design',
+    category: 'Engineering & Workflow',
+    icon: 'database-design.svg',
+  },
+  {
+    name: 'CI/CD',
+    category: 'Engineering & Workflow',
+    icon: 'ci-cd.svg',
+  },
+  {
+    name: 'API Testing',
+    category: 'Engineering & Workflow',
+    icon: 'api-testing.svg',
   },
   {
     name: 'Git',
