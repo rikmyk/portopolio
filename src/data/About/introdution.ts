@@ -1,6 +1,6 @@
 export const introduction = {
   paragraphs: [
-    "Hi everyone! My name is Rico Maykel Erawanto. I'm a Junior Full Stack Developer, Information Systems Student, gamer, and Google-fu search enthusiast. Currently, I'm working as a Front End / Fullstack Developer Intern at PT Nose Herbal Indo, having previously built HRIS systems and APIs as a Full Stack Intern at Mahakarya Maritim Indonesia.",
+    "Hi everyone! My name is Rico Maykel Erawanto. I'm a Full Stack Developer, Information Systems Student, gamer, and Google-fu search enthusiast. Currently, I'm working as a Front End / Fullstack Developer Intern at PT Nose Herbal Indo, having previously built HRIS systems and APIs as a Full Stack Intern at Mahakarya Maritim Indonesia.",
     {
       beforeAge: "I live in Medan, Indonesia. I was born in Bekasi, 15 May 2003, which makes me ",
       afterAge: " years old. I am currently pursuing my degree in Information Systems at Universitas Prima Indonesia.",
