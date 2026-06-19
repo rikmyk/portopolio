@@ -12,7 +12,16 @@ const Contact = () => {
     <>
       <NextSeo title='Contact' />
       <main>
-        <Text size={42} weight='bold'>
+        <Text 
+          weight={800}
+          sx={{
+            fontSize: 42,
+            letterSpacing: '-0.02em',
+            lineHeight: 1.2,
+          }}
+          color={isDark ? '#F5F5F7' : '#1A1A1A'}
+          mt="xl"
+        >
           Contact
         </Text>
         <ContactList isDark={isDark} />

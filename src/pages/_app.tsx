@@ -56,7 +56,37 @@ const MyApp: FC<AppProps> = ({ Component, pageProps, router }) => {
       <MantineProvider
         withGlobalStyles
         withNormalizeCSS
-        theme={{ colorScheme, fontFamily: rubik.style.fontFamily }}
+        theme={{
+          colorScheme,
+          fontFamily: rubik.style.fontFamily,
+          colors: {
+            dark: [
+              '#F5F5F7', // 0: primary text
+              '#A1A1AA', // 1: secondary text
+              '#71717A', // 2
+              '#52525B', // 3
+              '#27272A', // 4
+              'rgba(255, 255, 255, 0.03)', // 5: surface/card background
+              'rgba(255, 255, 255, 0.06)', // 6
+              'rgba(255, 255, 255, 0.08)', // 7
+              '#050505', // 8: primary background
+              '#000000', // 9
+            ],
+            violet: [
+              '#EBF8FF',
+              '#BEE3F8',
+              '#90CDF4',
+              '#63B3ED',
+              '#4299E1',
+              '#3182CE',
+              '#3B82F6', // Accent color
+              '#2A69AC',
+              '#2B6CB0',
+              '#1A365D',
+            ],
+          },
+          primaryColor: 'violet',
+        }}
       >
         <NotificationsProvider>
           <Provider>
