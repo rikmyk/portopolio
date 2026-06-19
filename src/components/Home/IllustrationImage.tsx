@@ -16,8 +16,8 @@ const IllustrationImage: FC<Props> = ({ src, width, height }) => {
           className="float-animation"
           sx={(theme) => ({
             position: 'relative',
-            padding: '2.5rem',
-            borderRadius: '24px',
+            padding: '1.25rem',
+            borderRadius: '50%',
             background: theme.colorScheme === 'dark' ? 'rgba(255, 255, 255, 0.02)' : 'rgba(0, 0, 0, 0.01)',
             border: `1px solid ${theme.colorScheme === 'dark' ? 'rgba(255, 255, 255, 0.08)' : 'rgba(0, 0, 0, 0.08)'}`,
             backdropFilter: 'blur(20px)',
@@ -41,10 +41,11 @@ const IllustrationImage: FC<Props> = ({ src, width, height }) => {
         >
           <Image
             src={src}
-            alt='illustration'
+            alt='Rico Maykel Erawanto'
             width={width}
             height={height}
             priority
+            style={{ borderRadius: '50%', objectFit: 'cover' }}
           />
         </Box>
       </Group>
