@@ -15,7 +15,7 @@ const Home: NextPage = () => {
       >
         <Grid align='center' sx={{ width: '90%' }}>
           <IllustrationImage
-            src='/images/myface.jpg'
+            src='/images/myface.jpeg'
             width={240}
             height={240}
           />
