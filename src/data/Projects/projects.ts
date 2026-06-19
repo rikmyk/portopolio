@@ -88,4 +88,14 @@ export const projects: Project[] = [
       '/images/projects/becdex.com/prev7.png',
     ],
   },
+  {
+    name: 'Roblox Community Eligibility Checker Bot',
+    category: 'Bot',
+    desc: 'Developed a custom integration bot with the Roblox API to automatically verify and track user membership status in Roblox community groups. The bot checks if a user has joined the group, calculates their membership duration, and automatically resets their joining data and eligibility milestones if they leave the community, ensuring real-time membership monitoring and automated access control.',
+    link: {
+      demo: null,
+      github: null,
+    },
+    tech: ['TypeScript', 'Node.js'],
+  },
 ];

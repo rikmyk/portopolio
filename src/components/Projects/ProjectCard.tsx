@@ -191,101 +191,156 @@ const ProjectCard: FC<Props> = ({ project }) => {
 
       <Paper
         key={project.name}
-        shadow='sm'
         radius='lg'
         p='xl'
         sx={{
           display: 'flex',
           flexDirection: 'column',
-          justifyContent: 'space-evenly',
+          justifyContent: 'space-between',
+          height: '100%',
+          minHeight: 280,
         }}
         className={classes.card}
       >
-        <Box
-          sx={{
-            display: 'flex',
-            alignItems: 'start',
-            justifyContent: 'space-between',
-          }}
-        >
-          <Title order={3}>{project.name}</Title>
+        <Box>
           <Box
             sx={{
               display: 'flex',
-              alignItems: 'center',
-              gap: 4,
+              alignItems: 'start',
+              justifyContent: 'space-between',
             }}
           >
-            {/* Preview Button */}
-            {hasPreview && (
-              <Tooltip label='View Preview' withArrow position='top'>
-                <ActionIcon
-                  color='violet'
-                  variant='light'
-                  size='lg'
-                  onClick={() => { setActiveImg(0); setPreviewOpen(true); }}
-                  className={`umami--click--${project.name.replaceAll(' ', '-')}-Preview`}
-                >
-                  <MdOutlinePhotoLibrary size={22} />
-                </ActionIcon>
-              </Tooltip>
-            )}
-
-            {project.link.github && (
-              <Link href={project.link.github} target='_blank'>
-                <Box
-                  className={`umami--click--${project.name.replaceAll(
-                    ' ',
-                    '-'
-                  )}-Source_Code`}
-                  title='Source Code'
-                >
-                  <ActionIcon color={dark ? undefined : 'dark'} size='lg'>
-                    <BsGithub size={24} />
-                  </ActionIcon>
-                </Box>
-              </Link>
-            )}
-            {project.link.demo && (
-              <Link href={project.link.demo} target='_blank'>
-                <Box
-                  className={`umami--click--${project.name.replaceAll(
-                    ' ',
-                    '-'
-                  )}-Demo`}
-                  title='Demo'
-                >
+            <Title 
+              order={3} 
+              sx={{
+                fontWeight: 700,
+                fontSize: '20px',
+                letterSpacing: '-0.01em',
+                color: dark ? '#F5F5F7' : '#1A1A1A',
+              }}
+            >
+              {project.name}
+            </Title>
+            <Box
+              sx={{
+                display: 'flex',
+                alignItems: 'center',
+                gap: 8,
+              }}
+            >
+              {/* Preview Button */}
+              {hasPreview && (
+                <Tooltip label='View Preview' withArrow position='top'>
                   <ActionIcon
-                    component='a'
-                    target='_blank'
-                    color={dark ? undefined : 'dark'}
+                    color='blue'
+                    variant='light'
                     size='lg'
+                    radius='md'
+                    onClick={() => { setActiveImg(0); setPreviewOpen(true); }}
+                    className={`umami--click--${project.name.replaceAll(' ', '-')}-Preview`}
+                    sx={{
+                      backgroundColor: dark ? 'rgba(59, 130, 246, 0.15)' : 'rgba(59, 130, 246, 0.08)',
+                      color: '#3B82F6',
+                    }}
                   >
-                    <HiExternalLink size={24} />
+                    <MdOutlinePhotoLibrary size={20} />
                   </ActionIcon>
-                </Box>
-              </Link>
-            )}
+                </Tooltip>
+              )}
+
+              {project.link.github && (
+                <Link href={project.link.github} target='_blank'>
+                  <Box
+                    className={`umami--click--${project.name.replaceAll(
+                      ' ',
+                      '-'
+                    )}-Source_Code`}
+                    title='Source Code'
+                  >
+                    <ActionIcon 
+                      color={dark ? undefined : 'dark'} 
+                      size='lg'
+                      radius='md'
+                      sx={{
+                        backgroundColor: dark ? 'rgba(255, 255, 255, 0.05)' : 'rgba(0, 0, 0, 0.05)',
+                        '&:hover': {
+                          backgroundColor: dark ? 'rgba(255, 255, 255, 0.1)' : 'rgba(0, 0, 0, 0.08)',
+                        }
+                      }}
+                    >
+                      <BsGithub size={20} />
+                    </ActionIcon>
+                  </Box>
+                </Link>
+              )}
+              {project.link.demo && (
+                <Link href={project.link.demo} target='_blank'>
+                  <Box
+                    className={`umami--click--${project.name.replaceAll(
+                      ' ',
+                      '-'
+                    )}-Demo`}
+                    title='Demo'
+                  >
+                    <ActionIcon
+                      component='a'
+                      target='_blank'
+                      color={dark ? undefined : 'dark'}
+                      size='lg'
+                      radius='md'
+                      sx={{
+                        backgroundColor: dark ? 'rgba(255, 255, 255, 0.05)' : 'rgba(0, 0, 0, 0.05)',
+                        '&:hover': {
+                          backgroundColor: dark ? 'rgba(255, 255, 255, 0.1)' : 'rgba(0, 0, 0, 0.08)',
+                        }
+                      }}
+                    >
+                      <HiExternalLink size={20} />
+                    </ActionIcon>
+                  </Box>
+                </Link>
+              )}
+            </Box>
           </Box>
+          <Text 
+            my='md' 
+            sx={{ 
+              fontSize: '14px',
+              lineHeight: 1.7,
+              color: dark ? '#A1A1AA' : '#52525B',
+            }}
+          >
+            {project.desc}
+          </Text>
         </Box>
-        <Text my='md' sx={{ flexGrow: 2 }}>
-          {project.desc}
-        </Text>
-        <Group spacing='xs'>
+        <Group spacing={8} mt="md">
           {skills
             .filter((skill) => project.tech.includes(skill.name))
             .map((skill) => (
               <Box
                 key={skill.name}
-                sx={{ position: 'relative', height: 25, width: 25 }}
+                sx={{ 
+                  position: 'relative', 
+                  height: 32, 
+                  width: 32,
+                  padding: 6,
+                  borderRadius: '50%',
+                  background: dark ? 'rgba(255, 255, 255, 0.05)' : 'rgba(0, 0, 0, 0.03)',
+                  border: `1px solid ${dark ? 'rgba(255, 255, 255, 0.08)' : 'rgba(0, 0, 0, 0.08)'}`,
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                }}
                 title={skill.name}
               >
-                <Image
-                  src={`/images/tech/${skill.icon}`}
-                  alt={skill.name}
-                  fill
-                  style={{ pointerEvents: 'none', objectFit: 'contain' }}
-                />
+                <Box sx={{ position: 'relative', width: 18, height: 18 }}>
+                  <Image
+                    src={`/images/tech/${skill.icon}`}
+                    alt={skill.name}
+                    fill
+                    style={{ pointerEvents: 'none', objectFit: 'contain' }}
+                  />
+                </Box>
               </Box>
             ))}
         </Group>
