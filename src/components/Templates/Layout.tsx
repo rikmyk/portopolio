@@ -3,7 +3,6 @@ import { useRouter } from 'next/router';
 import { FC, ReactNode } from 'react';
 
 import { headerItems } from '@/data/headerItem';
-import useBreakpoint from '@/hooks/isSm';
 
 import ScrollToTop from '../ScrollToTop';
 import MyFooter from './Footer';
@@ -135,7 +134,6 @@ const SocialSidebar = () => (
 );
 
 const MyAppShell: FC<Props> = ({ children }) => {
-  const { isSm } = useBreakpoint();
   const router = useRouter();
 
   if (!headerItems.map((item) => item.link).includes(router.asPath))
@@ -147,6 +145,8 @@ const MyAppShell: FC<Props> = ({ children }) => {
       <CosmicBackground />
       {/* Social sidebar */}
       <SocialSidebar />
+      {/* Mobile Drawer Navigation */}
+      <MyNavbar />
 
       <AppShell
         styles={{
@@ -161,8 +161,6 @@ const MyAppShell: FC<Props> = ({ children }) => {
             background: 'transparent',
           },
         }}
-        navbarOffsetBreakpoint='sm'
-        navbar={isSm ? <MyNavbar /> : undefined}
         footer={<MyFooter />}
         header={<MyHeader />}
       >
