@@ -1,4 +1,4 @@
-import { Box, Paper, SimpleGrid, Text, useMantineColorScheme } from '@mantine/core';
+import { Box, Paper, SimpleGrid, Text } from '@mantine/core';
 import Link from 'next/link';
 import { FC } from 'react';
 import { BsEnvelope, BsGithub, BsInstagram, BsTelegram } from 'react-icons/bs';

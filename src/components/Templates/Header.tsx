@@ -3,10 +3,8 @@ import {
   Burger,
   Button,
   Container,
-  Group,
   Header,
   MediaQuery,
-  Text,
 } from '@mantine/core';
 import { useAtom } from 'jotai';
 import Link from 'next/link';

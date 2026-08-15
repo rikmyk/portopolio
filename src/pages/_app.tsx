@@ -31,7 +31,7 @@ const rubik = Rubik({ subsets: ['latin'] });
 
 const MyApp: FC<AppProps> = ({ Component, pageProps, router }) => {
   const colorScheme: ColorScheme = 'dark';
-  const toggleColorScheme = () => {};
+  const toggleColorScheme = () => undefined;
 
   useEffect(() => {
     messageForHackers();

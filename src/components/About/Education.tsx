@@ -1,4 +1,4 @@
-import { Box, Paper, Text, Timeline, useMantineColorScheme } from '@mantine/core';
+import { Paper, Text, Timeline, useMantineColorScheme } from '@mantine/core';
 
 import { education } from '@/data/About/education';
 import { useStyles } from '@/hooks/useStyles';

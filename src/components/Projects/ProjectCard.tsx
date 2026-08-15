@@ -36,7 +36,8 @@ const ProjectCard: FC<Props> = ({ project }) => {
   // Hanya render Modal setelah mount di client → cegah hydration mismatch
   useEffect(() => { setMounted(true); }, []);
 
-  const hasPreview = project.preview && project.preview.length > 0;
+  const previewImages = project.preview || [];
+  const hasPreview = previewImages.length > 0;
 
   return (
     <>
@@ -60,7 +61,7 @@ const ProjectCard: FC<Props> = ({ project }) => {
           {/* Main Image — adaptif landscape & portrait + arrow navigation */}
           <Box sx={{ position: 'relative', width: '100%' }}>
             {/* Arrow Left */}
-            {project.preview!.length > 1 && (
+            {previewImages.length > 1 && (
               <ActionIcon
                 onClick={() => setActiveImg((prev) => Math.max(prev - 1, 0))}
                 disabled={activeImg === 0}
@@ -100,7 +101,7 @@ const ProjectCard: FC<Props> = ({ project }) => {
               }}
             >
               <MantineImage
-                src={project.preview![activeImg]}
+                src={previewImages[activeImg]}
                 alt={`${project.name} preview ${activeImg + 1}`}
                 radius='md'
                 fit='contain'
@@ -117,10 +118,10 @@ const ProjectCard: FC<Props> = ({ project }) => {
             </Box>
 
             {/* Arrow Right */}
-            {project.preview!.length > 1 && (
+            {previewImages.length > 1 && (
               <ActionIcon
-                onClick={() => setActiveImg((prev) => Math.min(prev + 1, project.preview!.length - 1))}
-                disabled={activeImg === project.preview!.length - 1}
+                onClick={() => setActiveImg((prev) => Math.min(prev + 1, previewImages.length - 1))}
+                disabled={activeImg === previewImages.length - 1}
                 variant='filled'
                 color='teal'
                 radius='xl'
@@ -131,7 +132,7 @@ const ProjectCard: FC<Props> = ({ project }) => {
                   top: '50%',
                   transform: 'translateY(-50%)',
                   zIndex: 10,
-                  opacity: activeImg === project.preview!.length - 1 ? 0.3 : 0.85,
+                  opacity: activeImg === previewImages.length - 1 ? 0.3 : 0.85,
                   transition: 'opacity 0.2s, transform 0.15s',
                   '&:not(:disabled):hover': {
                     opacity: 1,
@@ -145,9 +146,9 @@ const ProjectCard: FC<Props> = ({ project }) => {
           </Box>
 
           {/* Thumbnail Strip */}
-          {project.preview!.length > 1 && (
+          {previewImages.length > 1 && (
             <Group mt='md' spacing='xs' position='center'>
-              {project.preview!.map((img, i) => (
+              {previewImages.map((img, i) => (
                 <Box
                   key={i}
                   onClick={() => setActiveImg(i)}
@@ -184,7 +185,7 @@ const ProjectCard: FC<Props> = ({ project }) => {
 
           {/* Counter */}
           <Text align='center' size='sm' color='dimmed' mt='xs'>
-            {activeImg + 1} / {project.preview!.length}
+            {activeImg + 1} / {previewImages.length}
           </Text>
         </Modal>
       )}

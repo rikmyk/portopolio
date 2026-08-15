@@ -1,4 +1,4 @@
-import { Badge, Box, List, Paper, Text, Timeline, useMantineColorScheme } from '@mantine/core';
+import { Badge, List, Paper, Text, Timeline, useMantineColorScheme } from '@mantine/core';
 
 import { workExperience } from '@/data/About/workExperience';
 import { useStyles } from '@/hooks/useStyles';

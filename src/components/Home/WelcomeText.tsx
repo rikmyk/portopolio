@@ -1,19 +1,12 @@
 import { Box, Button, Grid, Group, Stack, Text } from '@mantine/core';
 import Link from 'next/link';
-import { FC, useEffect, useState } from 'react';
-import { TypeAnimation } from 'react-type-animation';
-
-import { useStyles } from '@/hooks/useStyles';
+import { FC } from 'react';
 
 interface Props {
   isDark: boolean;
 }
 
 const WelcomeText: FC<Props> = () => {
-  const { classes } = useStyles();
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => { setMounted(true); }, []);
 
   return (
     <Grid.Col sm={6} orderSm={1}>
