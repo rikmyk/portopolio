@@ -99,7 +99,7 @@ const CosmicBackground = () => (
 const SocialSidebar = () => (
   <div className='social-sidebar'>
     <a
-      href='https://github.com/rcomykl'
+      href='https://github.com/rikmyk'
       target='_blank'
       rel='noopener noreferrer'
       title='GitHub'
