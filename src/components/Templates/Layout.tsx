@@ -110,7 +110,7 @@ const SocialSidebar = () => (
       </svg>
     </a>
     <a
-      href='https://linkedin.com/in/rcomykl'
+      href='https://www.linkedin.com/in/ricomykle'
       target='_blank'
       rel='noopener noreferrer'
       title='LinkedIn'
