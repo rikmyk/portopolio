@@ -75,7 +75,7 @@ const IllustrationImage: FC<Props> = ({ src }) => {
                 width={222}
                 height={222}
                 priority
-                style={{ borderRadius: '50%', objectFit: 'cover', display: 'block' }}
+                style={{ borderRadius: '50%', objectFit: 'cover', display: 'block', width: '100%', height: '100%' }}
               />
             </div>
           </div>

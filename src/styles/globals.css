@@ -676,3 +676,98 @@ button:active, .mantine-Button-root:active,
   border-radius: 3px;
 }
 
+/* =============================================
+   RESPONSIVE MEDIA QUERIES (Mobile & iPad/Tablet)
+   ============================================= */
+
+/* iPad / Tablet (641px - 1024px) */
+@media (min-width: 641px) and (max-width: 1024px) {
+  .hero-avatar-wrapper {
+    width: 420px;
+    height: 420px;
+    margin: 0 auto;
+  }
+  .orbit-ring-outer,
+  .orbit-track-outer {
+    width: 420px;
+    height: 420px;
+  }
+  .orbit-ring-inner,
+  .orbit-track-inner {
+    width: 340px;
+    height: 340px;
+  }
+  .hero-glass-square-card {
+    width: 260px;
+    height: 260px;
+    border-radius: 22px;
+  }
+  .avatar-halo-ring {
+    width: 180px;
+    height: 180px;
+  }
+  .badge-top-react { top: -20px; left: 50%; }
+  .badge-right-gh { right: -20px; top: 50%; }
+  .badge-bottom-react { bottom: -20px; left: 50%; }
+  .badge-left-js { left: -20px; top: 50%; }
+  .badge-right-top-ts { top: 30px; right: 30px; }
+  .badge-right-bottom-js { bottom: 30px; right: 30px; }
+  .badge-bottom-left-ts { bottom: 30px; left: 30px; }
+  .badge-top-left-re { top: 30px; left: 30px; }
+
+  .glass-shards-orbit-wrapper {
+    width: 900px;
+    height: 900px;
+  }
+}
+
+/* Mobile Devices (<= 640px) */
+@media (max-width: 640px) {
+  .hero-avatar-wrapper {
+    width: 310px;
+    height: 310px;
+    margin: 0 auto;
+  }
+  .orbit-ring-outer,
+  .orbit-track-outer {
+    width: 300px;
+    height: 300px;
+  }
+  .orbit-ring-inner,
+  .orbit-track-inner {
+    width: 240px;
+    height: 240px;
+  }
+  .hero-glass-square-card {
+    width: 185px;
+    height: 185px;
+    border-radius: 18px;
+  }
+  .avatar-halo-ring {
+    width: 130px;
+    height: 130px;
+  }
+  .stitch-badge {
+    transform: scale(0.85);
+  }
+  .badge-top-react { top: -16px; left: 50%; }
+  .badge-right-gh { right: -16px; top: 50%; }
+  .badge-bottom-react { bottom: -16px; left: 50%; }
+  .badge-left-js { left: -16px; top: 50%; }
+  .badge-right-top-ts { top: 18px; right: 18px; }
+  .badge-right-bottom-js { bottom: 18px; right: 18px; }
+  .badge-bottom-left-ts { bottom: 18px; left: 18px; }
+  .badge-top-left-re { top: 18px; left: 18px; }
+
+  .glass-shards-orbit-wrapper {
+    display: none;
+  }
+
+  .mantine-Tabs-tabsList {
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 4px;
+  }
+}
+

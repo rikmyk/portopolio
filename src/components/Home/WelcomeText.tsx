@@ -101,6 +101,11 @@ const WelcomeText: FC<Props> = () => {
             '@media (min-width: 768px)': {
               justifyContent: 'flex-start',
             },
+            '@media (max-width: 576px)': {
+              flexDirection: 'column',
+              alignItems: 'stretch',
+              width: '100%',
+            },
           }}
         >
           <Link href='/projects' passHref legacyBehavior>
@@ -117,6 +122,9 @@ const WelcomeText: FC<Props> = () => {
                 border: '1px solid rgba(45, 212, 191, 0.6)',
                 boxShadow: '0 0 25px rgba(45, 212, 191, 0.4), inset 0 1px 1px rgba(241, 245, 249, 0.4)',
                 transition: 'all 0.25s ease',
+                '@media (max-width: 576px)': {
+                  width: '100%',
+                },
                 '&:hover': {
                   background: 'linear-gradient(135deg, #2dd4bf 0%, #1f4e8c 100%)',
                   color: '#f1f5f9',
@@ -142,6 +150,9 @@ const WelcomeText: FC<Props> = () => {
                 padding: '10px 24px',
                 backdropFilter: 'blur(10px)',
                 transition: 'all 0.25s ease',
+                '@media (max-width: 576px)': {
+                  width: '100%',
+                },
                 '&:hover': {
                   background: 'rgba(31, 78, 140, 0.4)',
                   borderColor: 'rgba(45, 212, 191, 0.5)',

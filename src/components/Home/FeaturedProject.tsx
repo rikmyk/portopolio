@@ -135,7 +135,7 @@ const FeaturedProject: FC = () => {
           </Group>
 
           {/* Action buttons */}
-          <Group spacing='md' mt='sm'>
+          <Group spacing='md' mt='sm' sx={{ '@media (max-width: 576px)': { flexDirection: 'column', alignItems: 'stretch' } }}>
             <Button
               component='a'
               href='https://cv-generator-mu-one.vercel.app/'
@@ -153,6 +153,9 @@ const FeaturedProject: FC = () => {
                 border: '1px solid rgba(45, 212, 191, 0.8)',
                 boxShadow: '0 0 25px rgba(45, 212, 191, 0.4)',
                 transition: 'all 0.25s ease',
+                '@media (max-width: 576px)': {
+                  width: '100%',
+                },
                 '&:hover': {
                   background: 'linear-gradient(135deg, #1f4e8c 0%, #2dd4bf 100%)',
                   color: '#f1f5f9',
@@ -175,6 +178,9 @@ const FeaturedProject: FC = () => {
                   fontWeight: 600,
                   fontSize: 14,
                   padding: '10px 20px',
+                  '@media (max-width: 576px)': {
+                    width: '100%',
+                  },
                   '&:hover': {
                     background: 'rgba(31, 78, 140, 0.3)',
                     color: '#2dd4bf',
