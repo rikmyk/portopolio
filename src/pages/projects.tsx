@@ -55,14 +55,14 @@ const ProjectsPage = () => {
             border: 'none',
             backgroundColor: 'transparent',
             '&[data-active]': {
-              backgroundColor: theme.colorScheme === 'dark' ? 'rgba(99, 102, 241, 0.12) !important' : 'rgba(99, 102, 241, 0.06) !important',
-              color: theme.colorScheme === 'dark' ? '#A5B4FC !important' : '#4F46E5 !important',
-              border: `1px solid ${theme.colorScheme === 'dark' ? 'rgba(165, 180, 252, 0.2)' : 'rgba(79, 70, 229, 0.15)'} !important`,
-              boxShadow: theme.colorScheme === 'dark' ? 'none' : '0 1px 3px rgba(79, 70, 229, 0.08)',
+              backgroundColor: 'rgba(45, 212, 191, 0.15) !important',
+              color: '#2dd4bf !important',
+              border: '1px solid rgba(45, 212, 191, 0.4) !important',
+              boxShadow: '0 0 15px rgba(45, 212, 191, 0.2)',
             },
             '&:hover:not([data-active])': {
-              backgroundColor: theme.colorScheme === 'dark' ? 'rgba(255, 255, 255, 0.04)' : 'rgba(0, 0, 0, 0.04)',
-              color: theme.colorScheme === 'dark' ? '#F5F5F7' : '#1A1A1A',
+              backgroundColor: 'rgba(255, 255, 255, 0.04)',
+              color: '#F5F5F7',
             }
           }
         })}

@@ -51,7 +51,7 @@ const Introduction = () => {
         variant='gradient'
         size={22}
         weight='bold'
-        gradient={{ from: '#3B82F6', to: '#EC4899', deg: 45 }}
+        gradient={{ from: '#2dd4bf', to: '#1f4e8c', deg: 135 }}
         sx={{ display: 'block', marginTop: 4, marginBottom: 12 }}
       >
         Rico Maykel Erawanto

@@ -22,7 +22,7 @@ const Education = () => {
       >
         Education
       </Text>
-      <Timeline active={1} color="blue" bulletSize={20} lineWidth={2}>
+      <Timeline active={1} color="teal" bulletSize={20} lineWidth={2}>
         {education.map((each) => (
           <Timeline.Item
             title={

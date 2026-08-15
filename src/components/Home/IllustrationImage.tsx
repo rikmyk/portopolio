@@ -1,4 +1,4 @@
-import { Box, Grid, Group } from '@mantine/core';
+import { Grid, Group } from '@mantine/core';
 import Image from 'next/image';
 import React, { FC } from 'react';
 
@@ -8,46 +8,78 @@ interface Props {
   height: number;
 }
 
-const IllustrationImage: FC<Props> = ({ src, width, height }) => {
+const IllustrationImage: FC<Props> = ({ src }) => {
   return (
     <Grid.Col sm={6} orderSm={2}>
       <Group position='center'>
-        <Box
-          className="float-animation"
-          sx={(theme) => ({
-            position: 'relative',
-            padding: '1.25rem',
-            borderRadius: '50%',
-            background: theme.colorScheme === 'dark' ? 'rgba(255, 255, 255, 0.02)' : 'rgba(0, 0, 0, 0.01)',
-            border: `1px solid ${theme.colorScheme === 'dark' ? 'rgba(255, 255, 255, 0.08)' : 'rgba(0, 0, 0, 0.08)'}`,
-            backdropFilter: 'blur(20px)',
-            WebkitBackdropFilter: 'blur(20px)',
-            boxShadow: theme.colorScheme === 'dark' ? '0 20px 50px rgba(0, 0, 0, 0.3)' : '0 20px 50px rgba(0, 0, 0, 0.05)',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            '&::before': {
-              content: '""',
-              position: 'absolute',
-              top: '-10%',
-              left: '-10%',
-              right: '-10%',
-              bottom: '-10%',
-              background: 'radial-gradient(circle, rgba(59, 130, 246, 0.12) 0%, transparent 70%)',
-              zIndex: -1,
-              pointerEvents: 'none',
-            }
-          })}
-        >
-          <Image
-            src={src}
-            alt='Rico Maykel Erawanto'
-            width={width}
-            height={height}
-            priority
-            style={{ borderRadius: '50%', objectFit: 'cover' }}
-          />
-        </Box>
+        <div className='hero-avatar-wrapper'>
+          {/* Dual Orbital Rings (Visual stroke circles) */}
+          <div className='orbit-ring-inner' />
+          <div className='orbit-ring-outer' />
+
+          {/* Outer Orbit Track (Rotates Clockwise 360 degrees loop) */}
+          <div className='orbit-track-outer'>
+            <div className='stitch-badge badge-top-react' title='React'>
+              <div className='orbit-keep-upright-outer'>
+                <Image src='/images/tech/react.svg' alt='React' width={24} height={24} />
+              </div>
+            </div>
+            <div className='stitch-badge badge-right-gh' title='Next.js'>
+              <div className='orbit-keep-upright-outer'>
+                <Image src='/images/tech/next.svg' alt='Next.js' width={24} height={24} style={{ filter: 'brightness(0) invert(1)' }} />
+              </div>
+            </div>
+            <div className='stitch-badge badge-bottom-react' title='Docker'>
+              <div className='orbit-keep-upright-outer'>
+                <Image src='/images/tech/docker.svg' alt='Docker' width={24} height={24} />
+              </div>
+            </div>
+            <div className='stitch-badge badge-left-js' title='Go (Golang)'>
+              <div className='orbit-keep-upright-outer'>
+                <Image src='/images/tech/golang.svg' alt='Go' width={26} height={26} />
+              </div>
+            </div>
+          </div>
+
+          {/* Inner Orbit Track (Rotates Counter-Clockwise 360 degrees loop) */}
+          <div className='orbit-track-inner'>
+            <div className='stitch-badge badge-right-top-ts' title='PostgreSQL'>
+              <div className='orbit-keep-upright-inner'>
+                <Image src='/images/tech/postgres.svg' alt='PostgreSQL' width={24} height={24} />
+              </div>
+            </div>
+            <div className='stitch-badge badge-right-bottom-js' title='Linux'>
+              <div className='orbit-keep-upright-inner'>
+                <Image src='/images/tech/linux.svg' alt='Linux' width={24} height={24} />
+              </div>
+            </div>
+            <div className='stitch-badge badge-bottom-left-ts' title='CI/CD'>
+              <div className='orbit-keep-upright-inner'>
+                <Image src='/images/tech/ci-cd.svg' alt='CI/CD' width={24} height={24} style={{ filter: 'brightness(0) invert(1)' }} />
+              </div>
+            </div>
+            <div className='stitch-badge badge-top-left-re' title='TypeScript'>
+              <div className='orbit-keep-upright-inner'>
+                <Image src='/images/tech/ts.svg' alt='TypeScript' width={24} height={24} />
+              </div>
+            </div>
+          </div>
+
+          {/* Square Glass Card */}
+          <div className='hero-glass-square-card'>
+            {/* Circular Neon Halo Ring */}
+            <div className='avatar-halo-ring'>
+              <Image
+                src={src}
+                alt='Rico Maykel Erawanto'
+                width={222}
+                height={222}
+                priority
+                style={{ borderRadius: '50%', objectFit: 'cover', display: 'block' }}
+              />
+            </div>
+          </div>
+        </div>
       </Group>
     </Grid.Col>
   );

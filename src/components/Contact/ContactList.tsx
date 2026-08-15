@@ -70,8 +70,8 @@ const ContactList: FC<Props> = ({ isDark }) => {
                   width: 48,
                   height: 48,
                   borderRadius: '12px',
-                  background: isDark ? 'rgba(59, 130, 246, 0.15)' : 'rgba(59, 130, 246, 0.08)',
-                  color: '#3B82F6',
+                  background: 'rgba(45, 212, 191, 0.15)',
+                  color: '#2dd4bf',
                   transition: 'transform 0.2s ease',
                   '&:hover': {
                     transform: 'scale(1.1)',

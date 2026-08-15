@@ -1,6 +1,16 @@
 import { Project } from './project';
 
 export const projects: Project[] = [
+  {
+    name: 'AI CV Generator',
+    category: 'Website',
+    desc: 'An intelligent AI-powered CV generator application designed to quickly craft professional, ATS-optimized resumes with real-time editing and modern layouts.',
+    link: {
+      demo: 'https://cv-generator-mu-one.vercel.app/',
+      github: null,
+    },
+    tech: ['TypeScript', 'Next.js', 'React.js', 'Tailwind CSS', 'Vercel'],
+  },
      {
           name: 'Kalkulator Web',
           category: 'Website',

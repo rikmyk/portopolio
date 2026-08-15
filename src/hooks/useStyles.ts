@@ -21,18 +21,18 @@ export const useStyles = createStyles((theme) => {
       },
     },
     gradientText: {
-      backgroundImage: `linear-gradient(135deg, #3B82F6 0%, #8B5CF6 50%, #EC4899 100%)`,
+      backgroundImage: `linear-gradient(135deg, #2dd4bf 0%, #1f4e8c 100%)`,
       color: 'transparent',
       backgroundClip: 'text',
       WebkitBackgroundClip: 'text',
       fontWeight: 700,
-      fontSize: 20,
+      fontSize: 22,
       '@media (min-width: 768px)': {
-        fontSize: 24,
+        fontSize: 26,
         textAlign: 'left',
       },
       lineHeight: 1.2,
-      marginTop: 2,
+      marginTop: 4,
     },
     bentoItem: {
       display: 'flex',

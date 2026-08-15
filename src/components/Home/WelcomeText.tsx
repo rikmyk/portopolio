@@ -1,6 +1,6 @@
 import { Box, Button, Grid, Group, Stack, Text } from '@mantine/core';
 import Link from 'next/link';
-import React, { FC, useEffect, useState } from 'react';
+import { FC, useEffect, useState } from 'react';
 import { TypeAnimation } from 'react-type-animation';
 
 import { useStyles } from '@/hooks/useStyles';
@@ -9,7 +9,7 @@ interface Props {
   isDark: boolean;
 }
 
-const WelcomeText: FC<Props> = ({ isDark }) => {
+const WelcomeText: FC<Props> = () => {
   const { classes } = useStyles();
   const [mounted, setMounted] = useState(false);
 
@@ -18,136 +18,142 @@ const WelcomeText: FC<Props> = ({ isDark }) => {
   return (
     <Grid.Col sm={6} orderSm={1}>
       <Stack
-        spacing='md'
+        spacing='lg'
         sx={{
           textAlign: 'center',
+          alignItems: 'center',
           '@media (min-width: 768px)': {
             textAlign: 'left',
+            alignItems: 'flex-start',
           },
         }}
       >
-        <Group 
-          spacing={8} 
-          align="center" 
-          sx={{ 
-            display: 'inline-flex', 
-            alignItems: 'center',
-            backgroundColor: isDark ? 'rgba(16, 185, 129, 0.08)' : 'rgba(16, 185, 129, 0.06)',
-            border: `1px solid ${isDark ? 'rgba(16, 185, 129, 0.2)' : 'rgba(16, 185, 129, 0.15)'}`,
-            padding: '6px 14px', 
-            borderRadius: 20,
-            width: 'fit-content',
-            marginBottom: 8,
-            alignSelf: 'center',
-            '@media (min-width: 768px)': {
-              alignSelf: 'flex-start',
-            }
-          }}
-        >
-          <span className="pulse-dot" />
-          <Text size="xs" weight={700} color="#10b981" sx={{ letterSpacing: '0.03em', textTransform: 'uppercase', display: 'flex', alignItems: 'center' }}>
-            {mounted ? (
-              <TypeAnimation
-                sequence={[
-                  'Interning at PT Nose Herbal Indo',
-                  3000,
-                  'Open to Freelance Projects',
-                  3000,
-                  'Based in Indonesia',
-                  3000,
-                ]}
-                cursor={true}
-                repeat={Infinity}
-              />
-            ) : (
-              'Interning at PT Nose Herbal Indo'
-            )}
-          </Text>
-        </Group>
 
-        <Box>
+
+        {/* Name & Role matching Midnight Orbit Palette */}
+        <Box sx={{ width: '100%' }}>
           <Text
             weight={800}
             sx={{
-              fontSize: 42,
+              fontSize: 48,
               lineHeight: 1.1,
               letterSpacing: '-0.03em',
+              color: '#f1f5f9',
               '@media (min-width: 768px)': {
-                fontSize: 56,
+                fontSize: 54,
               },
             }}
-            color={isDark ? '#F5F5F7' : '#1A1A1A'}
           >
-            Rico Maykel Erawanto
+            Rico{' '}
+            <Text
+              component='span'
+              sx={{
+                background: 'linear-gradient(135deg, #2dd4bf 0%, #1f4e8c 100%)',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+                backgroundClip: 'text',
+              }}
+            >
+              Maykel
+            </Text>
+            <br />
+            <Text
+              component='span'
+              sx={{
+                background: 'linear-gradient(135deg, #2dd4bf 0%, #1f4e8c 100%)',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+                backgroundClip: 'text',
+              }}
+            >
+              Erawanto
+            </Text>
           </Text>
-          <Box mt={10}>
-            <Text component='span' className={classes.gradientText}>
+          <Box mt={14}>
+            <Text
+              weight={700}
+              sx={{
+                fontSize: 22,
+                color: '#2dd4bf',
+                letterSpacing: '-0.01em',
+                '@media (min-width: 768px)': {
+                  fontSize: 24,
+                },
+              }}
+            >
               Full Stack Developer
             </Text>
           </Box>
         </Box>
+
+        {/* Bio */}
         <Text
-          size='lg'
           sx={{
-            color: isDark ? '#A1A1AA' : '#52525B',
-            lineHeight: 1.7,
+            color: 'rgba(241, 245, 249, 0.8)',
+            lineHeight: 1.65,
             fontWeight: 400,
-            fontSize: 16,
-            maxWidth: 500,
-            '@media (min-width: 992px)': {
-              fontSize: 18,
-            },
+            fontSize: 15,
+            maxWidth: 460,
           }}
         >
           Specializing in building modern enterprise web applications, high-performance APIs, and custom automation tools. Dedicated to writing clean, maintainable code.
         </Text>
 
-        <Group 
-          spacing="md" 
-          mt="lg"
+        {/* CTA Buttons - Midnight Orbit styled */}
+        <Group
+          spacing='md'
+          mt='sm'
           sx={{
             justifyContent: 'center',
             '@media (min-width: 768px)': {
               justifyContent: 'flex-start',
-            }
+            },
           }}
         >
-          <Link href="/projects" passHref legacyBehavior>
+          <Link href='/projects' passHref legacyBehavior>
             <Button
-              size="md"
-              radius="lg"
-              variant="filled"
+              component='a'
+              size='md'
+              radius='xl'
               sx={{
-                backgroundColor: isDark ? '#F5F5F7' : '#1A1A1A',
-                color: isDark ? '#1A1A1A' : '#FFFFFF',
-                fontWeight: 600,
+                background: 'linear-gradient(135deg, #1f4e8c 0%, #2dd4bf 100%)',
+                color: '#050812',
+                fontWeight: 700,
                 fontSize: 14,
+                padding: '10px 24px',
+                border: '1px solid rgba(45, 212, 191, 0.6)',
+                boxShadow: '0 0 25px rgba(45, 212, 191, 0.4), inset 0 1px 1px rgba(241, 245, 249, 0.4)',
+                transition: 'all 0.25s ease',
                 '&:hover': {
-                  backgroundColor: isDark ? '#E5E5E7' : '#2A2A2A',
+                  background: 'linear-gradient(135deg, #2dd4bf 0%, #1f4e8c 100%)',
+                  color: '#f1f5f9',
+                  transform: 'translateY(-2px)',
+                  boxShadow: '0 0 35px rgba(45, 212, 191, 0.6), inset 0 1px 1px rgba(241, 245, 249, 0.6)',
                 },
-                boxShadow: isDark ? '0 4px 14px rgba(255, 255, 255, 0.1)' : '0 4px 14px rgba(0, 0, 0, 0.1)',
-                transition: 'all 0.2s ease',
               }}
             >
               Explore Projects
             </Button>
           </Link>
-          <Link href="/contact" passHref legacyBehavior>
+          <Link href='/contact' passHref legacyBehavior>
             <Button
-              size="md"
-              radius="lg"
-              variant="outline"
+              component='a'
+              size='md'
+              radius='xl'
               sx={{
-                borderColor: isDark ? 'rgba(255, 255, 255, 0.15)' : 'rgba(0, 0, 0, 0.15)',
-                color: isDark ? '#F5F5F7' : '#1A1A1A',
+                background: 'rgba(17, 26, 58, 0.6)',
+                border: '1px solid rgba(31, 78, 140, 0.6)',
+                color: '#f1f5f9',
                 fontWeight: 600,
                 fontSize: 14,
-                backgroundColor: 'transparent',
+                padding: '10px 24px',
+                backdropFilter: 'blur(10px)',
+                transition: 'all 0.25s ease',
                 '&:hover': {
-                  backgroundColor: isDark ? 'rgba(255, 255, 255, 0.05)' : 'rgba(0, 0, 0, 0.03)',
-                  borderColor: isDark ? 'rgba(255, 255, 255, 0.25)' : 'rgba(0, 0, 0, 0.25)',
+                  background: 'rgba(31, 78, 140, 0.4)',
+                  borderColor: 'rgba(45, 212, 191, 0.5)',
+                  transform: 'translateY(-2px)',
                 },
-                transition: 'all 0.2s ease',
               }}
             >
               Get in Touch
@@ -160,3 +166,6 @@ const WelcomeText: FC<Props> = ({ isDark }) => {
 };
 
 export default WelcomeText;
+
+
+

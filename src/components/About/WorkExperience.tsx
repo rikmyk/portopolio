@@ -35,7 +35,7 @@ const WorkExperience = () => {
       >
         Work Experience
       </Text>
-      <Timeline active={lastPresentIndex} color='blue' bulletSize={20} lineWidth={2}>
+      <Timeline active={lastPresentIndex} color='teal' bulletSize={20} lineWidth={2}>
         {workExperience.map((each) => (
           <Timeline.Item
             title={

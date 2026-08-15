@@ -3,8 +3,8 @@ import { Contact } from './contact';
 export const contacts: Contact[] = [
   {
     name: 'Email',
-    label: 'rikomaikel01@gmail.com',
-    link: 'mailto:rikomaikel01@gmail.com',
+    label: 'ricomaykelerawanto@gmail.com',
+    link: 'mailto:ricomaykelerawanto@gmail.com',
   },
   {
     name: 'Telegram',
@@ -14,12 +14,12 @@ export const contacts: Contact[] = [
   {
     name: 'GitHub',
     label: 'rikmyk',
-    link: 'https://github.com/r ikmyk',
+    link: 'https://github.com/rikmyk',
   },
   {
     name: 'Instagram',
-    label: '@66rimko',
-    link: 'https://www.instagram.com/66rimko/',
+    label: '@kowri66',
+    link: 'https://www.instagram.com/kowri66/',
   },
 
 ];

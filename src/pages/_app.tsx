@@ -5,7 +5,6 @@ import {
   ColorSchemeProvider,
   MantineProvider,
 } from '@mantine/core';
-import { useColorScheme, useHotkeys, useLocalStorage } from '@mantine/hooks';
 import { NotificationsProvider } from '@mantine/notifications';
 import { Rubik } from '@next/font/google';
 import { Worker } from '@react-pdf-viewer/core';
@@ -31,18 +30,8 @@ Router.events.on('routeChangeError', () => NProgress.done());
 const rubik = Rubik({ subsets: ['latin'] });
 
 const MyApp: FC<AppProps> = ({ Component, pageProps, router }) => {
-  const preferredColorScheme = useColorScheme();
-
-  const [colorScheme, setColorScheme] = useLocalStorage<ColorScheme>({
-    key: 'mantine-color-scheme',
-    defaultValue: preferredColorScheme,
-    getInitialValueInEffect: true,
-  });
-
-  const toggleColorScheme = (value?: ColorScheme) =>
-    setColorScheme(value || (colorScheme === 'dark' ? 'light' : 'dark'));
-
-  useHotkeys([['mod+J', () => toggleColorScheme()]]);
+  const colorScheme: ColorScheme = 'dark';
+  const toggleColorScheme = () => {};
 
   useEffect(() => {
     messageForHackers();
@@ -66,23 +55,23 @@ const MyApp: FC<AppProps> = ({ Component, pageProps, router }) => {
               '#71717A', // 2
               '#52525B', // 3
               '#27272A', // 4
-              'rgba(255, 255, 255, 0.03)', // 5: surface/card background
-              'rgba(255, 255, 255, 0.06)', // 6
+              'rgba(139, 92, 246, 0.08)', // 5: surface/card
+              'rgba(139, 92, 246, 0.12)', // 6
               'rgba(255, 255, 255, 0.08)', // 7
-              '#050505', // 8: primary background
-              '#000000', // 9
+              '#050510', // 8: primary background
+              '#030308', // 9
             ],
             violet: [
-              '#EBF8FF',
-              '#BEE3F8',
-              '#90CDF4',
-              '#63B3ED',
-              '#4299E1',
-              '#3182CE',
-              '#3B82F6', // Accent color
-              '#2A69AC',
-              '#2B6CB0',
-              '#1A365D',
+              '#f5f0ff',
+              '#ede9fe',
+              '#ddd6fe',
+              '#c4b5fd',
+              '#a78bfa',
+              '#8b5cf6', // primary violet
+              '#7c3aed',
+              '#6d28d9',
+              '#5b21b6',
+              '#4c1d95',
             ],
           },
           primaryColor: 'violet',
