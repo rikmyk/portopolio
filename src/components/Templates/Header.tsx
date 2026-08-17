@@ -1,20 +1,16 @@
 import {
   Box,
-  Burger,
   Button,
   Container,
   Header,
   MediaQuery,
 } from '@mantine/core';
-import { useAtom } from 'jotai';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
 import { headerItems } from '@/data/headerItem';
-import { navbarAtom } from '@/store/navbar';
 
 const MyHeader = () => {
-  const [opened, setOpened] = useAtom(navbarAtom);
   const router = useRouter();
   const path = router.asPath;
 
@@ -41,16 +37,7 @@ const MyHeader = () => {
         }}
       >
         {/* Left space for balance */}
-        <Box sx={{ width: 40 }}>
-          <MediaQuery largerThan='sm' styles={{ display: 'none' }}>
-            <Burger
-              opened={opened}
-              onClick={() => setOpened((o) => !o)}
-              size='sm'
-              color='rgba(255,255,255,0.8)'
-            />
-          </MediaQuery>
-        </Box>
+        <Box sx={{ width: 40 }} />
 
         {/* Desktop Centered Nav Dock */}
         <MediaQuery smallerThan='sm' styles={{ display: 'none' }}>
@@ -90,16 +77,16 @@ const MyHeader = () => {
                         fontSize: 14,
                         padding: '6px 20px',
                         background: isActive
-                          ? 'linear-gradient(135deg, rgba(31, 78, 140, 0.6) 0%, rgba(45, 212, 191, 0.35) 100%)'
+                          ? 'linear-gradient(135deg, rgba(6, 56, 105, 0.75) 0%, rgba(76, 213, 218, 0.35) 100%)'
                           : 'transparent',
                         border: isActive
-                          ? '1px solid rgba(45, 212, 191, 0.6)'
+                          ? '1px solid rgba(76, 213, 218, 0.5)'
                           : '1px solid transparent',
-                        boxShadow: isActive ? '0 0 15px rgba(45, 212, 191, 0.4)' : 'none',
+                        boxShadow: isActive ? '0 0 15px rgba(76, 213, 218, 0.25)' : 'none',
                         transition: 'all 0.25s ease',
                         '&:hover': {
                           background: isActive
-                            ? 'linear-gradient(135deg, rgba(31, 78, 140, 0.75) 0%, rgba(45, 212, 191, 0.45) 100%)'
+                            ? 'linear-gradient(135deg, rgba(6, 56, 105, 0.85) 0%, rgba(76, 213, 218, 0.45) 100%)'
                             : 'rgba(255, 255, 255, 0.08)',
                           color: '#ffffff',
                         },
@@ -115,8 +102,8 @@ const MyHeader = () => {
                           width: 24,
                           height: 2,
                           borderRadius: 2,
-                          background: '#2dd4bf',
-                          boxShadow: '0 0 8px #2dd4bf',
+                          background: '#76EBD7',
+                          boxShadow: '0 0 8px #76EBD7',
                         }}
                       />
                     )}

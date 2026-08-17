@@ -154,7 +154,7 @@ const ProjectCard: FC<Props> = ({ project }) => {
                   onClick={() => setActiveImg(i)}
                   sx={{
                     cursor: 'pointer',
-                    border: i === activeImg ? '2px solid #2dd4bf' : '2px solid transparent',
+                    border: i === activeImg ? '2px solid #76EBD7' : '2px solid transparent',
                     borderRadius: 8,
                     overflow: 'hidden',
                     width: 72,
@@ -240,8 +240,8 @@ const ProjectCard: FC<Props> = ({ project }) => {
                     onClick={() => { setActiveImg(0); setPreviewOpen(true); }}
                     className={`umami--click--${project.name.replaceAll(' ', '-')}-Preview`}
                     sx={{
-                      backgroundColor: 'rgba(45, 212, 191, 0.15)',
-                      color: '#2dd4bf',
+                      backgroundColor: 'rgba(118, 235, 215, 0.15)',
+                      color: '#76EBD7',
                     }}
                   >
                     <MdOutlinePhotoLibrary size={20} />
@@ -308,7 +308,7 @@ const ProjectCard: FC<Props> = ({ project }) => {
             sx={{ 
               fontSize: '14px',
               lineHeight: 1.7,
-              color: dark ? '#A1A1AA' : '#52525B',
+              color: dark ? '#F5F5F7' : '#52525B',
             }}
           >
             {project.desc}

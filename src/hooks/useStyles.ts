@@ -21,7 +21,7 @@ export const useStyles = createStyles((theme) => {
       },
     },
     gradientText: {
-      backgroundImage: `linear-gradient(135deg, #2dd4bf 0%, #1f4e8c 100%)`,
+      backgroundImage: `linear-gradient(135deg, #4CD5DA 0%, #1583C5 100%)`,
       color: 'transparent',
       backgroundClip: 'text',
       WebkitBackgroundClip: 'text',

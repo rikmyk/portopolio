@@ -51,7 +51,7 @@ const Introduction = () => {
         variant='gradient'
         size={22}
         weight='bold'
-        gradient={{ from: '#2dd4bf', to: '#1f4e8c', deg: 135 }}
+        gradient={{ from: '#4CD5DA', to: '#1583C5', deg: 135 }}
         sx={{ display: 'block', marginTop: 4, marginBottom: 12 }}
       >
         Rico Maykel Erawanto
@@ -60,7 +60,7 @@ const Introduction = () => {
         // Paragraph dengan umur dinamis
         if (typeof para === 'object' && 'beforeAge' in para) {
           return (
-            <Text size='md' my='md' key={idx} sx={{ color: isDark ? '#A1A1AA' : '#52525B', lineHeight: 1.75 }}>
+            <Text size='md' my='md' key={idx} sx={{ color: isDark ? '#F5F5F7' : '#52525B', lineHeight: 1.75 }}>
               {para.beforeAge}
               <Text component='span' weight='bold' color={isDark ? '#F5F5F7' : '#1A1A1A'}>
                 {age ?? '...'}
@@ -72,7 +72,7 @@ const Introduction = () => {
 
         // Paragraph biasa (string)
         return (
-          <Text size='md' my='md' key={idx} sx={{ color: isDark ? '#A1A1AA' : '#52525B', lineHeight: 1.75 }}>
+          <Text size='md' my='md' key={idx} sx={{ color: isDark ? '#F5F5F7' : '#52525B', lineHeight: 1.75 }}>
             {para}
           </Text>
         );

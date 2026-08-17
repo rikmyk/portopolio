@@ -32,8 +32,8 @@ const Education = () => {
             }
             key={each.name}
           >
-            <Text size="sm" weight={500} color={isDark ? '#A1A1AA' : '#52525B'}>{each.name}</Text>
-            <Text size='xs' color={isDark ? '#A1A1AA' : '#71717A'}>{each.major}</Text>
+            <Text size="sm" weight={500} color={isDark ? '#F5F5F7' : '#52525B'}>{each.name}</Text>
+            <Text size='xs' color={isDark ? '#F5F5F7' : '#71717A'}>{each.major}</Text>
             <Text size='xs' color='dimmed' mt={4}>
               {each.timePeriod}
             </Text>

@@ -11,11 +11,11 @@ const MyFooter = () => {
       sx={{
         textAlign: 'center',
         fontSize: 14,
-        background: 'rgba(17, 26, 58, 0.45) !important',
+        background: 'rgba(6, 56, 105, 0.45) !important',
         backdropFilter: 'blur(16px) saturate(130%) !important',
         WebkitBackdropFilter: 'blur(16px) saturate(130%) !important',
-        borderTop: '1px solid rgba(31, 78, 140, 0.35) !important',
-        boxShadow: '0 -8px 32px 0 rgba(5, 8, 18, 0.6) !important',
+        borderTop: '1px solid rgba(76, 213, 218, 0.35) !important',
+        boxShadow: '0 -8px 32px 0 rgba(2, 39, 75, 0.6) !important',
         position: 'relative',
         zIndex: 10,
       }}
@@ -37,7 +37,7 @@ const MyFooter = () => {
                 textDecoration: 'underline',
                 fontWeight: 600,
                 transition: 'color 0.2s ease',
-                '&:hover': { color: '#2dd4bf' },
+                '&:hover': { color: '#76EBD7' },
               }}
             >
               Copyleft

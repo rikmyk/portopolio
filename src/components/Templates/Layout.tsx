@@ -1,4 +1,4 @@
-import { AppShell, Container } from '@mantine/core';
+import { AppShell, Container, MediaQuery } from '@mantine/core';
 import { useRouter } from 'next/router';
 import { FC, ReactNode } from 'react';
 
@@ -13,7 +13,7 @@ interface Props {
   children: ReactNode;
 }
 
-// Floating sharp 3D glass crack shards component (Slow 360° Outer Orbit Ring)
+// Floating liquid glass blobs component (Slow 360° Outer Orbit Ring)
 const GlassShards = () => (
   <div className='glass-shards-orbit-wrapper'>
     <div className='glass-shard shard-1' />
@@ -37,6 +37,9 @@ const ShootingStars = () => (
     <div className='shooting-star star-5' />
     <div className='shooting-star star-6' />
     <div className='shooting-star star-7' />
+    <div className='shooting-star star-8' />
+    <div className='shooting-star star-9' />
+    <div className='shooting-star star-10' />
   </div>
 );
 
@@ -50,10 +53,10 @@ const CosmicBackground = () => (
       overflow: 'hidden',
       pointerEvents: 'none',
       background:
-        'radial-gradient(ellipse 100% 50% at 50% 50%, rgba(192, 38, 211, 0.22) 0%, rgba(124, 58, 237, 0.18) 35%, transparent 75%),' +
-        'radial-gradient(circle 450px at 75% 45%, rgba(168, 85, 247, 0.28) 0%, rgba(236, 72, 153, 0.12) 60%, transparent 80%),' +
-        'radial-gradient(circle 500px at 20% 55%, rgba(99, 102, 241, 0.2) 0%, transparent 70%),' +
-        '#050412',
+        'radial-gradient(ellipse 100% 50% at 50% 50%, rgba(11, 103, 160, 0.2) 0%, rgba(6, 56, 105, 0.5) 35%, transparent 75%),' +
+        'radial-gradient(circle 450px at 75% 45%, rgba(76, 213, 218, 0.07) 0%, rgba(11, 103, 160, 0.16) 60%, transparent 80%),' +
+        'radial-gradient(circle 500px at 20% 55%, rgba(11, 103, 160, 0.24) 0%, transparent 70%),' +
+        '#02274B',
     }}
   >
     {/* Stars layer */}
@@ -76,12 +79,32 @@ const CosmicBackground = () => (
           'radial-gradient(2.5px 2.5px at 82% 12%, rgba(255,255,255,0.95) 0%, transparent 100%)',
           'radial-gradient(1px 1px at 48% 42%, rgba(255,255,255,0.6) 0%, transparent 100%)',
           'radial-gradient(1.5px 1.5px at 70% 70%, rgba(255,255,255,0.85) 0%, transparent 100%)',
-          'radial-gradient(2px 2px at 22% 24%, rgba(220,200,255,0.9) 0%, transparent 100%)',
+          'radial-gradient(2px 2px at 22% 24%, rgba(200,220,255,0.9) 0%, transparent 100%)',
           'radial-gradient(1px 1px at 94% 38%, rgba(255,255,255,0.7) 0%, transparent 100%)',
           'radial-gradient(1px 1px at 2% 92%, rgba(255,255,255,0.8) 0%, transparent 100%)',
           'radial-gradient(2.5px 2.5px at 52% 4%, rgba(255,255,255,0.95) 0%, transparent 100%)',
           'radial-gradient(1px 1px at 68% 32%, rgba(255,255,255,0.6) 0%, transparent 100%)',
-          'radial-gradient(1.5px 1.5px at 38% 68%, rgba(220,180,255,0.85) 0%, transparent 100%)',
+          'radial-gradient(1.5px 1.5px at 38% 68%, rgba(180,210,255,0.85) 0%, transparent 100%)',
+          'radial-gradient(1px 1px at 5% 25%, rgba(255,255,255,0.85) 0%, transparent 100%)',
+          'radial-gradient(1.5px 1.5px at 15% 55%, rgba(255,255,255,0.7) 0%, transparent 100%)',
+          'radial-gradient(2px 2px at 26% 6%, rgba(200,220,255,0.85) 0%, transparent 100%)',
+          'radial-gradient(1px 1px at 35% 45%, rgba(255,255,255,0.75) 0%, transparent 100%)',
+          'radial-gradient(1px 1px at 42% 72%, rgba(255,255,255,0.9) 0%, transparent 100%)',
+          'radial-gradient(1.5px 1.5px at 55% 8%, rgba(255,255,255,0.8) 0%, transparent 100%)',
+          'radial-gradient(2px 2px at 61% 35%, rgba(180,210,255,0.8) 0%, transparent 100%)',
+          'radial-gradient(1px 1px at 66% 62%, rgba(255,255,255,0.65) 0%, transparent 100%)',
+          'radial-gradient(1.5px 1.5px at 73% 18%, rgba(255,255,255,0.85) 0%, transparent 100%)',
+          'radial-gradient(2.5px 2.5px at 76% 85%, rgba(255,255,255,0.9) 0%, transparent 100%)',
+          'radial-gradient(1px 1px at 84% 30%, rgba(255,255,255,0.7) 0%, transparent 100%)',
+          'radial-gradient(1.5px 1.5px at 86% 60%, rgba(200,220,255,0.85) 0%, transparent 100%)',
+          'radial-gradient(1px 1px at 91% 8%, rgba(255,255,255,0.8) 0%, transparent 100%)',
+          'radial-gradient(2px 2px at 93% 52%, rgba(255,255,255,0.75) 0%, transparent 100%)',
+          'radial-gradient(1px 1px at 96% 88%, rgba(255,255,255,0.9) 0%, transparent 100%)',
+          'radial-gradient(1px 1px at 8% 95%, rgba(255,255,255,0.7) 0%, transparent 100%)',
+          'radial-gradient(1.5px 1.5px at 24% 97%, rgba(180,210,255,0.8) 0%, transparent 100%)',
+          'radial-gradient(1px 1px at 47% 95%, rgba(255,255,255,0.65) 0%, transparent 100%)',
+          'radial-gradient(2px 2px at 63% 93%, rgba(255,255,255,0.85) 0%, transparent 100%)',
+          'radial-gradient(1.5px 1.5px at 80% 96%, rgba(255,255,255,0.75) 0%, transparent 100%)',
         ].join(','),
         animation: 'twinkle 8s ease-in-out infinite alternate',
       }}
@@ -89,7 +112,7 @@ const CosmicBackground = () => (
     {/* Shooting Stars Meteor Shower Layer */}
     <ShootingStars />
 
-    {/* Glass shards */}
+    {/* Liquid glass blobs */}
     <GlassShards />
   </div>
 );
@@ -156,12 +179,19 @@ const MyAppShell: FC<Props> = ({ children }) => {
             zIndex: 1,
             minHeight: '100vh',
             paddingTop: 70,
+            '@media (max-width: 767.98px)': {
+              paddingBottom: 96,
+            },
           },
           root: {
             background: 'transparent',
           },
         }}
-        footer={<MyFooter />}
+        footer={
+          <MediaQuery smallerThan='sm' styles={{ display: 'none' }}>
+            <MyFooter />
+          </MediaQuery>
+        }
         header={<MyHeader />}
       >
         <Container>{children}</Container>

@@ -51,30 +51,30 @@ const MyApp: FC<AppProps> = ({ Component, pageProps, router }) => {
           colors: {
             dark: [
               '#F5F5F7', // 0: primary text
-              '#A1A1AA', // 1: secondary text
-              '#71717A', // 2
+              '#E4E4EB', // 1: secondary text
+              '#A9A9B5', // 2
               '#52525B', // 3
               '#27272A', // 4
-              'rgba(139, 92, 246, 0.08)', // 5: surface/card
-              'rgba(139, 92, 246, 0.12)', // 6
+              'rgba(118, 235, 215, 0.06)', // 5: surface/card (vibrant mint tint)
+              'rgba(118, 235, 215, 0.1)', // 6
               'rgba(255, 255, 255, 0.08)', // 7
-              '#050510', // 8: primary background
-              '#030308', // 9
+              '#02274B', // 8: primary background (midnight frost)
+              '#011d38', // 9: deepest background
             ],
-            violet: [
-              '#f5f0ff',
-              '#ede9fe',
-              '#ddd6fe',
-              '#c4b5fd',
-              '#a78bfa',
-              '#8b5cf6', // primary violet
-              '#7c3aed',
-              '#6d28d9',
-              '#5b21b6',
-              '#4c1d95',
+            aurora: [
+              '#e8fbf9',
+              '#c9f5f0',
+              '#a0eee6',
+              '#76EBD7', // vibrant mint
+              '#4CD5DA', // coral turquoise
+              '#30ACCF',
+              '#1583C5', // horizon
+              '#0B67A0', // medium persian blue
+              '#063869', // stockholm
+              '#02274B', // dark ocean blue
             ],
           },
-          primaryColor: 'violet',
+          primaryColor: 'aurora',
         }}
       >
         <NotificationsProvider>

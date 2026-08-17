@@ -31,7 +31,7 @@ const WelcomeText: FC<Props> = () => {
               fontSize: 48,
               lineHeight: 1.1,
               letterSpacing: '-0.03em',
-              color: '#f1f5f9',
+              color: '#F5F5F7',
               '@media (min-width: 768px)': {
                 fontSize: 54,
               },
@@ -41,10 +41,7 @@ const WelcomeText: FC<Props> = () => {
             <Text
               component='span'
               sx={{
-                background: 'linear-gradient(135deg, #2dd4bf 0%, #1f4e8c 100%)',
-                WebkitBackgroundClip: 'text',
-                WebkitTextFillColor: 'transparent',
-                backgroundClip: 'text',
+                color: '#F5F5F7',
               }}
             >
               Maykel
@@ -53,10 +50,7 @@ const WelcomeText: FC<Props> = () => {
             <Text
               component='span'
               sx={{
-                background: 'linear-gradient(135deg, #2dd4bf 0%, #1f4e8c 100%)',
-                WebkitBackgroundClip: 'text',
-                WebkitTextFillColor: 'transparent',
-                backgroundClip: 'text',
+                color: '#F5F5F7',
               }}
             >
               Erawanto
@@ -67,7 +61,7 @@ const WelcomeText: FC<Props> = () => {
               weight={700}
               sx={{
                 fontSize: 22,
-                color: '#2dd4bf',
+                color: '#76EBD7',
                 letterSpacing: '-0.01em',
                 '@media (min-width: 768px)': {
                   fontSize: 24,
@@ -82,7 +76,7 @@ const WelcomeText: FC<Props> = () => {
         {/* Bio */}
         <Text
           sx={{
-            color: 'rgba(241, 245, 249, 0.8)',
+            color: '#F5F5F7',
             lineHeight: 1.65,
             fontWeight: 400,
             fontSize: 15,
@@ -114,22 +108,22 @@ const WelcomeText: FC<Props> = () => {
               size='md'
               radius='xl'
               sx={{
-                background: 'linear-gradient(135deg, #1f4e8c 0%, #2dd4bf 100%)',
-                color: '#050812',
+                background: 'linear-gradient(135deg, #4CD5DA 0%, #76EBD7 100%)',
+                color: '#02274B',
                 fontWeight: 700,
                 fontSize: 14,
                 padding: '10px 24px',
-                border: '1px solid rgba(45, 212, 191, 0.6)',
-                boxShadow: '0 0 25px rgba(45, 212, 191, 0.4), inset 0 1px 1px rgba(241, 245, 249, 0.4)',
+                border: '1px solid rgba(118, 235, 215, 0.45)',
+                boxShadow: '0 0 25px rgba(118, 235, 215, 0.25), inset 0 1px 1px rgba(241, 245, 249, 0.4)',
                 transition: 'all 0.25s ease',
                 '@media (max-width: 576px)': {
                   width: '100%',
                 },
                 '&:hover': {
-                  background: 'linear-gradient(135deg, #2dd4bf 0%, #1f4e8c 100%)',
-                  color: '#f1f5f9',
+                  background: 'linear-gradient(135deg, #76EBD7 0%, #4CD5DA 100%)',
+                  color: '#02274B',
                   transform: 'translateY(-2px)',
-                  boxShadow: '0 0 35px rgba(45, 212, 191, 0.6), inset 0 1px 1px rgba(241, 245, 249, 0.6)',
+                  boxShadow: '0 0 35px rgba(118, 235, 215, 0.35), inset 0 1px 1px rgba(241, 245, 249, 0.6)',
                 },
               }}
             >
@@ -142,8 +136,8 @@ const WelcomeText: FC<Props> = () => {
               size='md'
               radius='xl'
               sx={{
-                background: 'rgba(17, 26, 58, 0.6)',
-                border: '1px solid rgba(31, 78, 140, 0.6)',
+                background: 'rgba(6, 56, 105, 0.6)',
+                border: '1px solid rgba(76, 213, 218, 0.5)',
                 color: '#f1f5f9',
                 fontWeight: 600,
                 fontSize: 14,
@@ -154,8 +148,8 @@ const WelcomeText: FC<Props> = () => {
                   width: '100%',
                 },
                 '&:hover': {
-                  background: 'rgba(31, 78, 140, 0.4)',
-                  borderColor: 'rgba(45, 212, 191, 0.5)',
+                  background: 'rgba(76, 213, 218, 0.4)',
+                  borderColor: 'rgba(118, 235, 215, 0.4)',
                   transform: 'translateY(-2px)',
                 },
               }}

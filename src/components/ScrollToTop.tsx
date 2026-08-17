@@ -6,11 +6,11 @@ const ScrollToTop = () => {
   const [scroll, scrollTo] = useWindowScroll();
 
   return (
-    <Affix position={{ bottom: 83, right: 38 }}>
+    <Affix position={{ bottom: 96, right: 38 }}>
       <Transition transition='fade' mounted={scroll.y > 200}>
         {(transitionStyles) => (
           <ActionIcon
-            color='violet'
+            color='aurora'
             variant='light'
             size='lg'
             radius='md'

@@ -62,7 +62,7 @@ const WorkExperience = () => {
               mt={4} 
               spacing={4}
               sx={{
-                color: isDark ? '#A1A1AA' : '#52525B',
+                color: isDark ? '#F5F5F7' : '#52525B',
               }}
             >
               {each.tasks.map((task, idx) => (

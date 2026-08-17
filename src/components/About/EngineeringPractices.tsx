@@ -34,7 +34,7 @@ const EngineeringPractices = () => {
             <Text 
               size="xs" 
               weight={700} 
-              color={isDark ? '#A1A1AA' : '#71717A'} 
+              color={isDark ? '#F5F5F7' : '#71717A'} 
               sx={{ textTransform: 'uppercase', letterSpacing: '0.05em' }}
               mb={8}
             >
@@ -50,7 +50,7 @@ const EngineeringPractices = () => {
                     fontWeight: 500,
                     borderRadius: '6px',
                     borderColor: isDark ? 'rgba(255, 255, 255, 0.15)' : 'rgba(0, 0, 0, 0.12)',
-                    color: isDark ? '#A1A1AA' : '#52525B',
+                    color: isDark ? '#F5F5F7' : '#52525B',
                     padding: '6px 10px',
                     height: 'auto',
                     backgroundColor: isDark ? 'rgba(255, 255, 255, 0.02)' : 'rgba(0, 0, 0, 0.01)',

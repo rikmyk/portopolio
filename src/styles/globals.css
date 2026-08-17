@@ -3,7 +3,7 @@
    ============================================= */
 #nprogress { pointer-events: none; }
 #nprogress .bar {
-  background: linear-gradient(90deg, #1f4e8c, #2dd4bf);
+  background: linear-gradient(90deg, #4CD5DA, #76EBD7);
   position: fixed;
   z-index: 1031;
   top: 0; left: 0;
@@ -13,7 +13,7 @@
   display: block;
   position: absolute;
   right: 0; width: 100px; height: 100%;
-  box-shadow: 0 0 10px #2dd4bf, 0 0 5px #1f4e8c;
+  box-shadow: 0 0 10px #76EBD7, 0 0 5px #4CD5DA;
   opacity: 1;
   transform: rotate(3deg) translate(0px, -4px);
 }
@@ -29,7 +29,7 @@
 body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   overflow-x: hidden;
-  background: #050812;
+  background: #02274B;
   color: #f1f5f9;
 }
 
@@ -58,19 +58,19 @@ button:active, .mantine-Button-root:active,
    GLASS CARD (Midnight Orbit)
    ============================================= */
 .glass-card {
-  background: rgba(17, 26, 58, 0.45) !important;
+  background: rgba(6, 56, 105, 0.45) !important;
   backdrop-filter: blur(16px) saturate(130%) !important;
   -webkit-backdrop-filter: blur(16px) saturate(130%) !important;
-  border: 1px solid rgba(31, 78, 140, 0.35) !important;
-  box-shadow: 0 8px 32px 0 rgba(5, 8, 18, 0.6) !important;
+  border: 1px solid rgba(76, 213, 218, 0.35) !important;
+  box-shadow: 0 8px 32px 0 rgba(2, 39, 75, 0.6) !important;
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
 }
 
 .glass-card:hover {
-  background: rgba(17, 26, 58, 0.65) !important;
-  border-color: rgba(45, 212, 191, 0.4) !important;
+  background: rgba(6, 56, 105, 0.65) !important;
+  border-color: rgba(118, 235, 215, 0.4) !important;
   transform: translateY(-4px);
-  box-shadow: 0 12px 40px 0 rgba(45, 212, 191, 0.25) !important;
+  box-shadow: 0 12px 40px 0 rgba(118, 235, 215, 0.25) !important;
 }
 
 /* =============================================
@@ -80,23 +80,23 @@ button:active, .mantine-Button-root:active,
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: rgba(45, 212, 191, 0.12);
-  border: 1px solid rgba(45, 212, 191, 0.4);
+  background: rgba(118, 235, 215, 0.07);
+  border: 1px solid rgba(76, 213, 218, 0.35);
   padding: 6px 16px;
   border-radius: 9999px;
   width: fit-content;
-  box-shadow: 0 0 15px rgba(45, 212, 191, 0.2);
+  box-shadow: 0 0 12px rgba(76, 213, 218, 0.15);
 }
 
 @keyframes pulseDot {
-  0%   { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(45, 212, 191, 0.7); }
-  70%  { transform: scale(1);    box-shadow: 0 0 0 8px rgba(45, 212, 191, 0); }
-  100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(45, 212, 191, 0); }
+  0%   { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(118, 235, 215, 0.35); }
+  70%  { transform: scale(1);    box-shadow: 0 0 0 8px rgba(118, 235, 215, 0); }
+  100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(118, 235, 215, 0); }
 }
 
 .pulse-dot {
   width: 8px; height: 8px;
-  background-color: #2dd4bf;
+  background-color: #76EBD7;
   border-radius: 50%;
   display: inline-block;
   flex-shrink: 0;
@@ -120,8 +120,8 @@ button:active, .mantine-Button-root:active,
   width: 440px;
   height: 440px;
   border-radius: 50%;
-  border: 1px solid rgba(31, 78, 140, 0.45);
-  box-shadow: 0 0 25px rgba(45, 212, 191, 0.2);
+  border: 1px solid rgba(76, 213, 218, 0.45);
+  box-shadow: 0 0 18px rgba(118, 235, 215, 0.12);
   pointer-events: none;
 }
 
@@ -130,8 +130,8 @@ button:active, .mantine-Button-root:active,
   width: 530px;
   height: 530px;
   border-radius: 50%;
-  border: 1px solid rgba(31, 78, 140, 0.3);
-  box-shadow: 0 0 35px rgba(31, 78, 140, 0.25);
+  border: 1px solid rgba(76, 213, 218, 0.3);
+  box-shadow: 0 0 25px rgba(76, 213, 218, 0.15);
   pointer-events: none;
 }
 
@@ -171,15 +171,14 @@ button:active, .mantine-Button-root:active,
   width: 330px;
   height: 330px;
   border-radius: 28px;
-  background: linear-gradient(135deg, rgba(17, 26, 58, 0.7) 0%, rgba(31, 78, 140, 0.25) 100%);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(45, 212, 191, 0.25);
-  box-shadow: 0 20px 60px rgba(5, 8, 18, 0.8), inset 0 1px 1px rgba(241, 245, 249, 0.25);
+  background: linear-gradient(135deg, rgba(6, 56, 105, 0.7) 0%, rgba(76, 213, 218, 0.25) 100%);
+  border: 1px solid rgba(118, 235, 215, 0.25);
+  box-shadow: 0 20px 60px rgba(2, 39, 75, 0.8), inset 0 1px 1px rgba(241, 245, 249, 0.25);
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 5;
+  will-change: transform;
   animation: cardFloat 6s ease-in-out infinite;
 }
 
@@ -189,8 +188,8 @@ button:active, .mantine-Button-root:active,
   height: 230px;
   border-radius: 50%;
   padding: 4px;
-  background: linear-gradient(135deg, #1f4e8c 0%, #2dd4bf 50%, #111a3a 100%);
-  box-shadow: 0 0 35px #1f4e8c, 0 0 20px #2dd4bf, inset 0 0 15px rgba(45, 212, 191, 0.5);
+  background: linear-gradient(135deg, #1583C5 0%, #4CD5DA 55%, #76EBD7 100%);
+  box-shadow: 0 0 25px rgba(76, 213, 218, 0.35), 0 0 12px rgba(118, 235, 215, 0.25), inset 0 0 15px rgba(6, 56, 105, 0.6);
   overflow: hidden;
 }
 
@@ -206,7 +205,7 @@ button:active, .mantine-Button-root:active,
   align-items: center;
   justify-content: center;
   pointer-events: auto;
-  box-shadow: 0 6px 20px rgba(5, 8, 18, 0.6);
+  box-shadow: 0 6px 20px rgba(2, 39, 75, 0.6);
   transition: transform 0.3s ease;
   cursor: pointer;
 }
@@ -240,11 +239,9 @@ button:active, .mantine-Button-root:active,
   margin-left: -22px;
   width: 44px; height: 44px;
   border-radius: 50%;
-  background: rgba(17, 26, 58, 0.85);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  border: 1px solid rgba(45, 212, 191, 0.5);
-  box-shadow: 0 0 20px rgba(45, 212, 191, 0.4);
+  background: rgba(6, 56, 105, 0.85);
+  border: 1px solid rgba(76, 213, 218, 0.4);
+  box-shadow: 0 0 15px rgba(76, 213, 218, 0.2);
 }
 
 .badge-right-gh {
@@ -253,11 +250,9 @@ button:active, .mantine-Button-root:active,
   margin-top: -22px;
   width: 44px; height: 44px;
   border-radius: 50%;
-  background: rgba(17, 26, 58, 0.9);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  border: 1px solid rgba(45, 212, 191, 0.4);
-  box-shadow: 0 0 15px rgba(31, 78, 140, 0.5);
+  background: rgba(6, 56, 105, 0.9);
+  border: 1px solid rgba(76, 213, 218, 0.35);
+  box-shadow: 0 0 15px rgba(76, 213, 218, 0.5);
 }
 
 .badge-bottom-react {
@@ -266,11 +261,9 @@ button:active, .mantine-Button-root:active,
   margin-left: -22px;
   width: 44px; height: 44px;
   border-radius: 50%;
-  background: rgba(17, 26, 58, 0.85);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  border: 1px solid rgba(45, 212, 191, 0.5);
-  box-shadow: 0 0 20px rgba(45, 212, 191, 0.4);
+  background: rgba(6, 56, 105, 0.85);
+  border: 1px solid rgba(76, 213, 218, 0.4);
+  box-shadow: 0 0 15px rgba(76, 213, 218, 0.2);
 }
 
 .badge-left-js {
@@ -279,11 +272,9 @@ button:active, .mantine-Button-root:active,
   margin-top: -22px;
   width: 44px; height: 44px;
   border-radius: 50%;
-  background: rgba(17, 26, 58, 0.85);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  border: 1px solid rgba(45, 212, 191, 0.5);
-  box-shadow: 0 0 15px rgba(45, 212, 191, 0.3);
+  background: rgba(6, 56, 105, 0.85);
+  border: 1px solid rgba(76, 213, 218, 0.4);
+  box-shadow: 0 0 15px rgba(118, 235, 215, 0.3);
 }
 
 /* Inner Orbit Track Positions (440px) */
@@ -292,11 +283,9 @@ button:active, .mantine-Button-root:active,
   right: 40px;
   width: 46px; height: 46px;
   border-radius: 12px;
-  background: rgba(17, 26, 58, 0.9);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  border: 1px solid rgba(31, 78, 140, 0.8);
-  box-shadow: 0 0 15px rgba(31, 78, 140, 0.4);
+  background: rgba(6, 56, 105, 0.9);
+  border: 1px solid rgba(76, 213, 218, 0.5);
+  box-shadow: 0 0 15px rgba(76, 213, 218, 0.4);
 }
 
 .badge-right-bottom-js {
@@ -304,11 +293,9 @@ button:active, .mantine-Button-root:active,
   right: 40px;
   width: 46px; height: 46px;
   border-radius: 12px;
-  background: rgba(17, 26, 58, 0.9);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  border: 1px solid rgba(45, 212, 191, 0.4);
-  box-shadow: 0 0 15px rgba(45, 212, 191, 0.4);
+  background: rgba(6, 56, 105, 0.9);
+  border: 1px solid rgba(76, 213, 218, 0.35);
+  box-shadow: 0 0 12px rgba(76, 213, 218, 0.2);
 }
 
 .badge-bottom-left-ts {
@@ -316,11 +303,9 @@ button:active, .mantine-Button-root:active,
   left: 40px;
   width: 46px; height: 46px;
   border-radius: 12px;
-  background: rgba(17, 26, 58, 0.9);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  border: 1px solid rgba(31, 78, 140, 0.8);
-  box-shadow: 0 0 15px rgba(31, 78, 140, 0.4);
+  background: rgba(6, 56, 105, 0.9);
+  border: 1px solid rgba(76, 213, 218, 0.5);
+  box-shadow: 0 0 15px rgba(76, 213, 218, 0.4);
 }
 
 .badge-top-left-re {
@@ -328,15 +313,13 @@ button:active, .mantine-Button-root:active,
   left: 40px;
   width: 46px; height: 46px;
   border-radius: 12px;
-  background: rgba(17, 26, 58, 0.9);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  border: 1px solid rgba(45, 212, 191, 0.4);
-  box-shadow: 0 0 15px rgba(45, 212, 191, 0.4);
+  background: rgba(6, 56, 105, 0.9);
+  border: 1px solid rgba(76, 213, 218, 0.35);
+  box-shadow: 0 0 12px rgba(76, 213, 218, 0.2);
 }
 
 /* =============================================
-   GLASS CRACK SHARDS (3D Sharp Floating Glass Frame - Dynamic Floating)
+   LIQUID GLASS BLOBS (Smooth Floating Liquid Glass Frame - Organic Morphing)
    ============================================= */
 .glass-shards-orbit-wrapper {
   position: absolute;
@@ -353,29 +336,37 @@ button:active, .mantine-Button-root:active,
 
 .glass-shard {
   position: absolute;
-  background: linear-gradient(135deg,
-    rgba(241, 245, 249, 0.25) 0%,
-    rgba(45, 212, 191, 0.12) 35%,
-    rgba(31, 78, 140, 0.25) 70%,
-    rgba(17, 26, 58, 0.1) 100%
-  );
-  border-top: 1.5px solid rgba(241, 245, 249, 0.85);
-  border-left: 1px solid rgba(45, 212, 191, 0.4);
-  border-right: 1px solid rgba(31, 78, 140, 0.2);
-  border-bottom: 1px solid rgba(17, 26, 58, 0.2);
-  backdrop-filter: blur(12px) saturate(150%);
-  -webkit-backdrop-filter: blur(12px) saturate(150%);
+  background:
+    radial-gradient(circle at 30% 20%, rgba(255, 255, 255, 0.45) 0%, rgba(255, 255, 255, 0.1) 38%, transparent 68%),
+    radial-gradient(circle at 72% 82%, rgba(118, 235, 215, 0.1) 0%, transparent 55%),
+    linear-gradient(135deg,
+      rgba(255, 255, 255, 0.3) 0%,
+      rgba(118, 235, 215, 0.08) 30%,
+      rgba(255, 255, 255, 0.05) 55%,
+      rgba(76, 213, 218, 0.1) 100%
+    );
+  border-top: 2px solid rgba(255, 255, 255, 0.7);
+  border-left: 2px solid rgba(255, 255, 255, 0.3);
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 2px solid rgba(6, 56, 105, 0.35);
   box-shadow:
-    inset 0 1px 2px rgba(241, 245, 249, 0.85),
-    0 12px 35px rgba(5, 8, 18, 0.75),
-    0 0 20px rgba(45, 212, 191, 0.3);
+    inset 0 4px 8px rgba(255, 255, 255, 0.4),
+    inset 0 -16px 26px rgba(2, 39, 75, 0.55),
+    inset 8px 0 16px rgba(255, 255, 255, 0.08),
+    inset -8px 0 14px rgba(2, 39, 75, 0.35),
+    0 22px 55px rgba(2, 39, 75, 0.8),
+    0 0 32px rgba(118, 235, 215, 0.1);
+  filter:
+    drop-shadow(-1px -2px 0 rgba(255, 255, 255, 0.15))
+    drop-shadow(3px 5px 0 rgba(2, 39, 75, 0.95))
+    drop-shadow(0 16px 22px rgba(2, 39, 75, 0.7));
   pointer-events: none;
   animation-play-state: running !important;
 }
 
-/* Sharp Triangular Glass Crack Geometries Ringing Around Center Content (All Sharp Tips Pointing Inward To Center) */
+/* Sharp Triangular Liquid Glass Geometries Ringing Around Center Content (All Sharp Tips Pointing Inward To Center) */
 
-/* --- 4 LARGE CORNER SHARDS (Tips Pointing Inward To Center) --- */
+/* --- 4 LARGE CORNER LIQUID SHARDS (Tips Pointing Inward To Center) --- */
 .shard-1 {
   width: 250px; height: 160px;
   top: 4%; left: 4%;
@@ -386,7 +377,7 @@ button:active, .mantine-Button-root:active,
 .shard-3 {
   width: 270px; height: 170px;
   top: 4%; right: 4%;
-  clip-path: polygon(50% 0%, 100% 0%, 0% 100%, 100% 50%);
+  clip-path: polygon(100% 0%, 50% 0%, 0% 100%, 100% 50%);
   animation: floatShard3 11s ease-in-out infinite !important;
   transform: rotate(-20deg);
 }
@@ -405,7 +396,7 @@ button:active, .mantine-Button-root:active,
   transform: rotate(-20deg);
 }
 
-/* --- 4 MEDIUM EDGE SHARDS (Tips Pointing Directly Inward To Center) --- */
+/* --- 4 MEDIUM EDGE LIQUID SHARDS (Tips Pointing Directly Inward To Center) --- */
 .shard-2 {
   width: 170px; height: 110px;
   top: 0px; left: calc(50% - 85px);
@@ -435,7 +426,7 @@ button:active, .mantine-Button-root:active,
   transform: rotate(0deg);
 }
 
-/* Dynamic Levitating Motions for Individual Glass Shards (Always Running) */
+/* Dynamic Levitating Motions for Individual Liquid Glass Shards (Always Running) */
 @keyframes floatShard1 {
   0%, 100% { transform: rotate(20deg) translateY(0px) translateX(0px); }
   50%       { transform: rotate(23deg) translateY(-18px) translateX(8px); }
@@ -482,15 +473,18 @@ button:active, .mantine-Button-root:active,
 
 .shooting-star {
   position: absolute;
+  width: 150px;
   height: 2px;
+  transform-origin: left center;
   background: linear-gradient(90deg,
     transparent 0%,
-    rgba(31, 78, 140, 0.6) 40%,
-    rgba(45, 212, 191, 0.9) 70%,
+    rgba(76, 213, 218, 0.4) 40%,
+    rgba(118, 235, 215, 0.65) 70%,
     #f1f5f9 100%
   );
   border-radius: 999px;
-  filter: drop-shadow(0 0 8px rgba(45, 212, 191, 0.9));
+  filter: drop-shadow(0 0 6px rgba(118, 235, 215, 0.5));
+  will-change: transform, opacity;
   opacity: 0;
 }
 
@@ -505,106 +499,117 @@ button:active, .mantine-Button-root:active,
   background: #f1f5f9;
   border-radius: 50%;
   box-shadow:
-    0 0 10px #f1f5f9,
-    0 0 20px #2dd4bf,
-    0 0 30px #1f4e8c;
+    0 0 8px #f1f5f9,
+    0 0 12px rgba(118, 235, 215, 0.5),
+    0 0 22px rgba(76, 213, 218, 0.5);
 }
 
 .star-1 {
+  top: -50px; left: 5%;
   animation: meteorStreak1 4.5s ease-out 0.4s infinite;
 }
 .star-2 {
+  top: -50px; left: 35%;
   animation: meteorStreak2 6.2s ease-out 2.1s infinite;
 }
 .star-3 {
+  top: -50px; left: -5%;
   animation: meteorStreak3 3.8s ease-out 4.2s infinite;
 }
 .star-4 {
+  top: 15%; left: -50px;
   animation: meteorStreak4 5.5s ease-out 1.2s infinite;
 }
 .star-5 {
+  top: -50px; left: 5%;
   animation: meteorStreak1 7.0s ease-out 3.6s infinite;
 }
 .star-6 {
+  top: -50px; left: -5%;
   animation: meteorStreak3 4.4s ease-out 5.8s infinite;
 }
 .star-7 {
+  top: -50px; left: 35%;
   animation: meteorStreak2 5.0s ease-out 0.8s infinite;
+}
+.star-8 {
+  top: -50px; left: 60%;
+  animation: meteorStreak1 5.2s ease-out 1.9s infinite;
+}
+.star-9 {
+  top: -50px; left: 80%;
+  animation: meteorStreak2 4.4s ease-out 3.3s infinite;
+}
+.star-10 {
+  top: 25%; left: -50px;
+  animation: meteorStreak4 6.8s ease-out 4.6s infinite;
 }
 
 @keyframes meteorStreak1 {
   0% {
-    top: -50px; left: 5%;
-    width: 0px; opacity: 0;
-    transform: translateX(0) translateY(0) rotate(40deg);
+    transform: translateX(0) translateY(0) scaleX(0) rotate(40deg);
+    opacity: 0;
   }
   12% {
-    width: 140px; opacity: 1;
+    opacity: 1;
   }
   65% {
-    width: 180px; opacity: 0.8;
+    opacity: 0.8;
   }
   100% {
-    top: 110%; left: 90%;
-    width: 0px; opacity: 0;
-    transform: translateX(950px) translateY(950px) rotate(40deg);
+    transform: translateX(950px) translateY(950px) scaleX(1.2) rotate(40deg);
+    opacity: 0;
   }
 }
 
 @keyframes meteorStreak2 {
   0% {
-    top: -50px; left: 35%;
-    width: 0px; opacity: 0;
-    transform: translateX(0) translateY(0) rotate(35deg);
+    transform: translateX(0) translateY(0) scaleX(0) rotate(35deg);
+    opacity: 0;
   }
   15% {
-    width: 120px; opacity: 0.9;
+    opacity: 0.9;
   }
   70% {
-    width: 150px; opacity: 0.6;
+    opacity: 0.6;
   }
   100% {
-    top: 110%; left: 100%;
-    width: 0px; opacity: 0;
-    transform: translateX(880px) translateY(880px) rotate(35deg);
+    transform: translateX(880px) translateY(880px) scaleX(1.1) rotate(35deg);
+    opacity: 0;
   }
 }
 
 @keyframes meteorStreak3 {
   0% {
-    top: -50px; left: -5%;
-    width: 0px; opacity: 0;
-    transform: translateX(0) translateY(0) rotate(50deg);
+    transform: translateX(0) translateY(0) scaleX(0) rotate(50deg);
+    opacity: 0;
   }
   20% {
-    width: 160px; opacity: 1;
+    opacity: 1;
   }
   80% {
-    width: 200px; opacity: 0.7;
+    opacity: 0.7;
   }
   100% {
-    top: 100%; left: 75%;
-    width: 0px; opacity: 0;
-    transform: translateX(1050px) translateY(1050px) rotate(50deg);
+    transform: translateX(1050px) translateY(1050px) scaleX(1.2) rotate(50deg);
+    opacity: 0;
   }
 }
 
 @keyframes meteorStreak4 {
   0% {
-    top: 15%; left: -50px;
-    width: 0px; opacity: 0;
-    transform: translateX(0) translateY(0) rotate(42deg);
+    transform: translateX(0) translateY(0) scaleX(0) rotate(42deg);
+    opacity: 0;
   }
   15% {
-    width: 130px; opacity: 1;
+    opacity: 1;
   }
   75% {
-    width: 160px; opacity: 0.5;
+    opacity: 0.5;
   }
   100% {
-    top: 110%; left: 80%;
-    width: 0px; opacity: 0;
-    transform: translateX(820px) translateY(820px) rotate(42deg);
+    transform: translateX(820px) translateY(820px) scaleX(1.2) rotate(42deg);
+    opacity: 0;
   }
 }
 
@@ -621,13 +626,13 @@ button:active, .mantine-Button-root:active,
   flex-direction: column;
   gap: 16px;
   align-items: center;
-  background: rgba(17, 26, 58, 0.8);
+  background: rgba(6, 56, 105, 0.8);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(45, 212, 191, 0.25);
+  border: 1px solid rgba(118, 235, 215, 0.25);
   border-radius: 30px;
   padding: 16px 10px;
-  box-shadow: 0 8px 32px rgba(5, 8, 18, 0.6);
+  box-shadow: 0 8px 32px rgba(2, 39, 75, 0.6);
 }
 
 .social-icon-btn {
@@ -647,12 +652,12 @@ button:active, .mantine-Button-root:active,
 }
 
 .icon-github {
-  background: rgba(31, 78, 140, 0.4);
-  color: #2dd4bf;
+  background: rgba(76, 213, 218, 0.4);
+  color: #76EBD7;
 }
 
 .icon-linkedin {
-  background: #1f4e8c;
+  background: #4CD5DA;
   color: #f1f5f9;
   border-radius: 8px;
 }
@@ -670,9 +675,9 @@ button:active, .mantine-Button-root:active,
    SCROLLBAR (Midnight Orbit)
    ============================================= */
 ::-webkit-scrollbar { width: 6px; }
-::-webkit-scrollbar-track { background: #050812; }
+::-webkit-scrollbar-track { background: #02274B; }
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, #1f4e8c, #2dd4bf);
+  background: linear-gradient(180deg, #1583C5, #4CD5DA);
   border-radius: 3px;
 }
 
@@ -768,6 +773,17 @@ button:active, .mantine-Button-root:active,
     overflow-x: auto !important;
     -webkit-overflow-scrolling: touch;
     padding-bottom: 4px;
+  }
+}
+
+/* Mobile-only floating bottom nav dock (hidden on iPad/tablet and desktop, which use the top nav) */
+.mobile-bottom-nav {
+  display: none;
+}
+
+@media (max-width: 767.98px) {
+  .mobile-bottom-nav {
+    display: flex;
   }
 }
 

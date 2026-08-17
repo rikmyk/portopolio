@@ -25,7 +25,7 @@ const ContactList: FC<Props> = ({ isDark }) => {
       <Text 
         size='md' 
         sx={{ 
-          color: isDark ? '#A1A1AA' : '#52525B', 
+          color: isDark ? '#F5F5F7' : '#52525B', 
           lineHeight: 1.6,
           maxWidth: 600,
         }}
@@ -70,8 +70,8 @@ const ContactList: FC<Props> = ({ isDark }) => {
                   width: 48,
                   height: 48,
                   borderRadius: '12px',
-                  background: 'rgba(45, 212, 191, 0.15)',
-                  color: '#2dd4bf',
+                  background: 'rgba(118, 235, 215, 0.15)',
+                  color: '#76EBD7',
                   transition: 'transform 0.2s ease',
                   '&:hover': {
                     transform: 'scale(1.1)',
@@ -88,7 +88,7 @@ const ContactList: FC<Props> = ({ isDark }) => {
                     textTransform: 'uppercase', 
                     letterSpacing: '0.05em',
                   }}
-                  color={isDark ? '#71717A' : '#A1A1AA'}
+                  color={isDark ? '#C9C9D1' : '#A1A1AA'}
                 >
                   {contact.name}
                 </Text>
